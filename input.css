@@ -350,6 +350,9 @@ a:hover .arrow-nudge {
 .materials-grid > .reveal-item:nth-child(7) {
   transition-delay: 700ms;
 }
+.materials-grid > .reveal-item:nth-child(8) {
+  transition-delay: 800ms;
+}
 
 /* Modal / Dialog using modern standards */
 dialog.contact-modal,
