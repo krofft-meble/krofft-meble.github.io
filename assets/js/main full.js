@@ -13,6 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
   initLanguageSelector();
 });
 
+const localeStrings = {
+  pl: { open: "Otwórz menu", close: "Zamknij menu", sending: "Wysyłanie..." },
+  en: { open: "Open menu", close: "Close menu", sending: "Sending..." },
+  de: { open: "Menü öffnen", close: "Menü schließen", sending: "Wird gesendet..." },
+  nb: { open: "Åpne menyen", close: "Lukk menyen", sending: "Sender..." },
+};
+const currentLocaleStrings =
+  localeStrings[document.documentElement.lang] || localeStrings.en;
+
 /* ----------------------------------------------------
  * 1. Navbar Scrolled State & Active Links
  * ---------------------------------------------------- */
@@ -62,7 +71,7 @@ function initMobileMenu() {
     menu.classList.add("open");
     document.body.style.overflow = "hidden";
     toggleBtn.setAttribute("aria-expanded", "true");
-    toggleBtn.setAttribute("aria-label", "Zamknij menu");
+    toggleBtn.setAttribute("aria-label", currentLocaleStrings.close);
   };
 
   const closeMenu = () => {
@@ -70,7 +79,7 @@ function initMobileMenu() {
     menu.classList.add("closed");
     document.body.style.overflow = "";
     toggleBtn.setAttribute("aria-expanded", "false");
-    toggleBtn.setAttribute("aria-label", "Otwórz menu");
+    toggleBtn.setAttribute("aria-label", currentLocaleStrings.open);
   };
 
   toggleBtn.addEventListener("click", () => {
@@ -191,7 +200,7 @@ function initContactModal() {
             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
           </svg>
-          Wysyłanie...
+          ${currentLocaleStrings.sending}
         `;
       }
 

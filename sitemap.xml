@@ -5,7 +5,7 @@
       https://krofft.pl/
     </loc>
     <lastmod>
-      2026-10-26T22:02:47.023Z
+      2026-11-05T22:24:52.460Z
     </lastmod>
     <priority>
       1.0
@@ -13,10 +13,10 @@
   </url>
   <url>
     <loc>
-      https://krofft.pl/pl/
+      https://krofft.pl/de/
     </loc>
     <lastmod>
-      2026-11-03T22:59:01.348Z
+      2026-11-05T22:22:31.473Z
     </lastmod>
     <priority>
       0.8
@@ -24,10 +24,241 @@
   </url>
   <url>
     <loc>
+      https://krofft.pl/en/
+    </loc>
+    <lastmod>
+      2026-11-05T22:22:31.464Z
+    </lastmod>
+    <priority>
+      0.8
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/no/
+    </loc>
+    <lastmod>
+      2026-11-05T22:22:31.480Z
+    </lastmod>
+    <priority>
+      0.8
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/pl/
+    </loc>
+    <lastmod>
+      2026-11-05T22:22:31.487Z
+    </lastmod>
+    <priority>
+      0.8
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/de/kontakt/
+    </loc>
+    <lastmod>
+      2026-11-05T22:22:31.474Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/de/o-nas/
+    </loc>
+    <lastmod>
+      2026-11-05T22:24:25.655Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/de/oferta/
+    </loc>
+    <lastmod>
+      2026-11-05T22:24:25.658Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/de/proces/
+    </loc>
+    <lastmod>
+      2026-11-05T22:22:31.477Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/de/produkcja/
+    </loc>
+    <lastmod>
+      2026-11-05T22:22:31.478Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/de/realizacje/
+    </loc>
+    <lastmod>
+      2026-11-05T22:22:31.478Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/en/kontakt/
+    </loc>
+    <lastmod>
+      2026-11-05T22:22:31.465Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/en/o-nas/
+    </loc>
+    <lastmod>
+      2026-11-05T22:24:25.654Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/en/oferta/
+    </loc>
+    <lastmod>
+      2026-11-05T22:24:25.657Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/en/proces/
+    </loc>
+    <lastmod>
+      2026-11-05T22:22:31.469Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/en/produkcja/
+    </loc>
+    <lastmod>
+      2026-11-05T22:22:31.470Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/en/realizacje/
+    </loc>
+    <lastmod>
+      2026-11-05T22:22:31.471Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/no/kontakt/
+    </loc>
+    <lastmod>
+      2026-11-05T22:22:31.480Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/no/o-nas/
+    </loc>
+    <lastmod>
+      2026-11-05T22:24:25.656Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/no/oferta/
+    </loc>
+    <lastmod>
+      2026-11-05T22:24:25.659Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/no/proces/
+    </loc>
+    <lastmod>
+      2026-11-05T22:22:31.483Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/no/produkcja/
+    </loc>
+    <lastmod>
+      2026-11-05T22:22:31.484Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
+      https://krofft.pl/no/realizacje/
+    </loc>
+    <lastmod>
+      2026-11-05T22:22:31.485Z
+    </lastmod>
+    <priority>
+      0.6
+    </priority>
+  </url>
+  <url>
+    <loc>
       https://krofft.pl/pl/kontakt/
     </loc>
     <lastmod>
-      2026-10-26T22:02:45.201Z
+      2026-11-05T22:22:31.488Z
     </lastmod>
     <priority>
       0.6
@@ -38,7 +269,7 @@
       https://krofft.pl/pl/o-nas/
     </loc>
     <lastmod>
-      2026-10-26T21:55:05.951Z
+      2026-11-05T22:22:31.489Z
     </lastmod>
     <priority>
       0.6
@@ -49,7 +280,7 @@
       https://krofft.pl/pl/oferta/
     </loc>
     <lastmod>
-      2026-11-03T22:58:50.503Z
+      2026-11-05T22:22:31.489Z
     </lastmod>
     <priority>
       0.6
@@ -60,7 +291,7 @@
       https://krofft.pl/pl/proces/
     </loc>
     <lastmod>
-      2026-10-26T21:55:07.408Z
+      2026-11-05T22:22:31.489Z
     </lastmod>
     <priority>
       0.6
@@ -71,7 +302,7 @@
       https://krofft.pl/pl/produkcja/
     </loc>
     <lastmod>
-      2026-10-26T21:55:10.588Z
+      2026-11-05T22:22:31.490Z
     </lastmod>
     <priority>
       0.6
@@ -82,7 +313,7 @@
       https://krofft.pl/pl/realizacje/
     </loc>
     <lastmod>
-      2026-10-26T21:55:08.937Z
+      2026-11-05T22:22:31.491Z
     </lastmod>
     <priority>
       0.6

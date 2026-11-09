@@ -138,6 +138,98 @@
     }),
   ];
 
+  const locale = document.documentElement.lang;
+  const projectCopy = {
+    en: {
+      categories: {
+        apartments: "Apartments & residences",
+        commercial: "Commercial interiors",
+        doors: "Doors & built-ins",
+      },
+      titles: { wardrobe: "Wardrobe", kitchen: "Kitchen", doors: "Doors & built-ins" },
+      details: {
+        "chwarzno-gdynia": ["Made-to-measure fitted furniture for an apartment in Chwarzno, Gdynia.", "Kitchen, hallway and bathroom."],
+        "grobla-gdansk": ["Made-to-measure furniture for an apartment on Grobla Street.", "Built-ins and interior furnishings."],
+        "letnica-gdansk": ["Made-to-measure furniture for an apartment in Gdańsk’s Letnica district.", "Built-ins and apartment furnishings."],
+        "przymorze-gdansk": ["Custom furnishings tailored to the residents’ needs.", "Kitchen, wardrobe, bedroom and bathroom."],
+        starowiejska: ["Bespoke fitted furniture tailored to the character of the apartment.", "Furniture and built-ins for a residential interior."],
+        "wrzeszcz-gdansk": ["Bespoke furniture designed for a cohesive, functional interior.", "Fitted furniture in an apartment."],
+        "garderoba-gdansk-stare-miasto": ["A bespoke wardrobe and fitted storage in an Old Town apartment.", "Storage built-ins."],
+        "kuchnia-gdansk-jasien": ["A bespoke kitchen designed as part of a residence.", "Kitchen fit-out."],
+        "bernadowska-gdynia": ["Made-to-measure furniture for a residence in Gdynia.", "Built-ins and interior furnishings."],
+        "stolema-gdansk": ["Made-to-measure fitted furniture for a residence.", "Furniture and built-ins for a home."],
+        "barbershop-pruszcz-gdanski": ["Fitted furniture and furnishings for a barbershop.", "Bespoke furniture for a commercial space."],
+        drzwi: ["Doors and fitted elements tailored to an individual interior design.", "Doors and made-to-measure built-ins."],
+      },
+    },
+    de: {
+      categories: {
+        apartments: "Apartments & Residenzen",
+        commercial: "Gewerbliche Innenräume",
+        doors: "Türen & Einbauten",
+      },
+      titles: { wardrobe: "Ankleidezimmer", kitchen: "Küche", doors: "Türen & Einbauten" },
+      details: {
+        "chwarzno-gdynia": ["Maßgefertigte Einbaumöbel für ein Apartment in Chwarzno, Gdynia.", "Küche, Flur und Bad."],
+        "grobla-gdansk": ["Maßgefertigte Möbel für ein Apartment in der Grobla-Straße.", "Einbauten und Innenausstattung."],
+        "letnica-gdansk": ["Maßgefertigte Möbel für ein Apartment im Danziger Stadtteil Letnica.", "Einbauten und Apartmentausstattung."],
+        "przymorze-gdansk": ["Individuelle Einrichtung, abgestimmt auf die Bedürfnisse der Bewohner.", "Küche, Ankleidezimmer, Schlafzimmer und Bad."],
+        starowiejska: ["Maßgefertigte Einbaumöbel, passend zum Charakter des Apartments.", "Möbel und Einbauten für Wohnräume."],
+        "wrzeszcz-gdansk": ["Maßgefertigte Möbel für ein stimmiges und funktionales Interieur.", "Einbaumöbel in einem Apartment."],
+        "garderoba-gdansk-stare-miasto": ["Maßgefertigtes Ankleidezimmer und Einbauschränke in einem Apartment in der Altstadt.", "Einbauten für Stauraum."],
+        "kuchnia-gdansk-jasien": ["Eine maßgefertigte Küche als Teil einer Residenz.", "Kücheneinbau."],
+        "bernadowska-gdynia": ["Maßgefertigte Möbel für eine Residenz in Gdynia.", "Einbauten und Innenausstattung."],
+        "stolema-gdansk": ["Maßgefertigte Einbaumöbel für eine Residenz.", "Möbel und Einbauten im Wohnbereich."],
+        "barbershop-pruszcz-gdanski": ["Einbauten und Innenausstattung für einen Barbershop.", "Maßmöbel für Gewerberäume."],
+        drzwi: ["Türen und Einbauten passend zu einem individuellen Innenraumkonzept.", "Türen und Einbauten nach Maß."],
+      },
+    },
+    nb: {
+      categories: {
+        apartments: "Leiligheter og residens­er",
+        commercial: "Kommersielt interiør",
+        doors: "Dører og innredninger",
+      },
+      titles: { wardrobe: "Garderobe", kitchen: "Kjøkken", doors: "Dører og innredninger" },
+      details: {
+        "chwarzno-gdynia": ["Innredning på mål til en leilighet i Chwarzno i Gdynia.", "Kjøkken, gang og bad."],
+        "grobla-gdansk": ["Møbler på mål til en leilighet i Grobla-gaten.", "Innredninger og interiørmøbler."],
+        "letnica-gdansk": ["Møbler på mål til en leilighet i bydelen Letnica i Gdańsk.", "Innredninger og møbler til leiligheten."],
+        "przymorze-gdansk": ["Individuell innredning tilpasset beboernes behov.", "Kjøkken, garderobe, soverom og bad."],
+        starowiejska: ["Innredning på mål tilpasset leilighetens særpreg.", "Møbler og innredninger til boligen."],
+        "wrzeszcz-gdansk": ["Møbler på mål utformet for et helhetlig og funksjonelt interiør.", "Innredning i en leilighet."],
+        "garderoba-gdansk-stare-miasto": ["Garderobe og innredning på mål i en leilighet i gamlebyen.", "Oppbevaringsinnredning."],
+        "kuchnia-gdansk-jasien": ["Kjøkken på mål utformet som en del av en residens.", "Kjøkkeninnredning."],
+        "bernadowska-gdynia": ["Møbler på mål til en residens i Gdynia.", "Innredninger og interiørelementer."],
+        "stolema-gdansk": ["Innredning på mål til en residens.", "Møbler og innredninger i boligen."],
+        "barbershop-pruszcz-gdanski": ["Innredning og møbler til en barbersalong.", "Møbler på mål til et næringslokale."],
+        drzwi: ["Dører og innredninger tilpasset en individuell interiørplan.", "Dører og innredning på mål."],
+      },
+    },
+  };
+  const localizedProjects = projectCopy[locale];
+  if (localizedProjects) {
+    projects.forEach((project) => {
+      const details = localizedProjects.details[project.slug];
+      project.categoryLabel = localizedProjects.categories[project.category];
+      project.description = details[0];
+      project.scope = details[1];
+      if (project.slug === "garderoba-gdansk-stare-miasto") {
+        project.title = localizedProjects.titles.wardrobe;
+      } else if (project.slug === "kuchnia-gdansk-jasien") {
+        project.title = localizedProjects.titles.kitchen;
+      } else if (project.slug === "drzwi") {
+        project.title = localizedProjects.titles.doors;
+      }
+    });
+  }
+  const interfaceCopy = {
+    pl: { gallery: "Otwórz galerię", photos: "ZDJĘĆ", photo: "zdjęcie", searchLocale: "pl" },
+    en: { gallery: "Open gallery", photos: "PHOTOS", photo: "photo", searchLocale: "en" },
+    de: { gallery: "Galerie öffnen", photos: "FOTOS", photo: "Foto", searchLocale: "de" },
+    nb: { gallery: "Åpne galleriet", photos: "BILDER", photo: "bilde", searchLocale: "nb" },
+  }[locale] || { gallery: "Open gallery", photos: "PHOTOS", photo: "photo", searchLocale: "en" };
+
   const grid = document.getElementById("realizacje-grid");
   const filterButtons = [
     ...document.querySelectorAll(".realizacje-filter-btn"),
@@ -194,7 +286,7 @@
     card.dataset.desc = project.description;
     card.dataset.scope = project.scope;
     card.setAttribute("aria-haspopup", "dialog");
-    card.setAttribute("aria-label", `Otwórz galerię: ${project.title}`);
+    card.setAttribute("aria-label", `${interfaceCopy.gallery}: ${project.title}`);
 
     const imageFrame = document.createElement("span");
     imageFrame.className = "block aspect-[4/3] overflow-hidden zoom-card";
@@ -228,7 +320,7 @@
     const count = document.createElement("span");
     count.className =
       "ml-3 shrink-0 text-[10px] uppercase tracking-wider text-gray-200";
-    count.textContent = `${project.images.length} ZDJĘĆ`;
+    count.textContent = `${project.images.length} ${interfaceCopy.photos}`;
 
     caption.append(text, count);
     card.append(imageFrame, caption);
@@ -239,7 +331,7 @@
   grid.replaceChildren(...cards);
 
   const updateResults = () => {
-    const query = searchInput.value.trim().toLocaleLowerCase("pl");
+    const query = searchInput.value.trim().toLocaleLowerCase(interfaceCopy.searchLocale);
     let visibleCards = 0;
 
     cards.forEach((card) => {
@@ -256,7 +348,7 @@
         ]
           .filter(Boolean)
           .join(" ")
-          .toLocaleLowerCase("pl")
+          .toLocaleLowerCase(interfaceCopy.searchLocale)
           .includes(query);
       const visible = matchesCategory && matchesQuery;
 
@@ -287,7 +379,7 @@
     const showImage = (index) => {
       const filename = project.images[index];
       modalFields.image.src = imageUrl(project, filename);
-      modalFields.image.alt = `${project.title} – zdjęcie ${index + 1}`;
+      modalFields.image.alt = `${project.title} – ${interfaceCopy.photo} ${index + 1}`;
       modalFields.gallery.querySelectorAll("button").forEach((thumbnail, i) => {
         const selected = i === index;
         thumbnail.setAttribute("aria-pressed", String(selected));
@@ -304,7 +396,7 @@
           "aspect-square overflow-hidden border-2 border-transparent transition-opacity hover:opacity-100";
         thumbnail.setAttribute(
           "aria-label",
-          `Pokaż zdjęcie ${index + 1}: ${project.title}`,
+          `${interfaceCopy.gallery} ${index + 1}: ${project.title}`,
         );
         thumbnail.setAttribute("aria-pressed", String(index === 0));
 

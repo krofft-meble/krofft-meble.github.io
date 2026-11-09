@@ -11,12 +11,20 @@
         console.error("Nie udało się zapisać poprzedniej strony.", error);
       }
 
-      const lang = navigator.language || navigator.userLanguage;
-      if (lang.toLowerCase().startsWith("pl")) {
-        window.location.replace("/pl/");
-      } else {
-        window.location.replace("/en/");
-      }
+      const language = (
+        navigator.languages?.[0] ||
+        navigator.language ||
+        navigator.userLanguage ||
+        ""
+      ).toLowerCase();
+      const destination = language.startsWith("pl")
+        ? "/pl/"
+        : language.startsWith("de")
+          ? "/de/"
+          : language.startsWith("nb") || language.startsWith("no")
+            ? "/no/"
+            : "/en/";
+      window.location.replace(destination);
     </script>
 
     <!-- Main -->
