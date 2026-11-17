@@ -138,6 +138,28 @@
     }),
   ];
 
+  const projectOrder = [
+    "garderoba-gdansk-stare-miasto",
+    "grobla-gdansk",
+    "letnica-gdansk",
+    "wrzeszcz-gdansk",
+    "starowiejska",
+    "stolema-gdansk",
+    "kuchnia-gdansk-jasien",
+    "bernadowska-gdynia",
+    "barbershop-pruszcz-gdanski",
+    "chwarzno-gdynia",
+    "przymorze-gdansk",
+    "drzwi",
+  ];
+  const projectOrderIndex = new Map(
+    projectOrder.map((slug, index) => [slug, index]),
+  );
+  projects.sort(
+    (first, second) =>
+      projectOrderIndex.get(first.slug) - projectOrderIndex.get(second.slug),
+  );
+
   const locale = document.documentElement.lang;
   const projectCopy = {
     en: {
@@ -146,20 +168,60 @@
         commercial: "Commercial interiors",
         doors: "Doors & built-ins",
       },
-      titles: { wardrobe: "Wardrobe", kitchen: "Kitchen", doors: "Doors & built-ins" },
+      titles: {
+        wardrobe: "Wardrobe",
+        kitchen: "Kitchen",
+        doors: "Doors & built-ins",
+      },
       details: {
-        "chwarzno-gdynia": ["Made-to-measure fitted furniture for an apartment in Chwarzno, Gdynia.", "Kitchen, hallway and bathroom."],
-        "grobla-gdansk": ["Made-to-measure furniture for an apartment on Grobla Street.", "Built-ins and interior furnishings."],
-        "letnica-gdansk": ["Made-to-measure furniture for an apartment in Gdańsk’s Letnica district.", "Built-ins and apartment furnishings."],
-        "przymorze-gdansk": ["Custom furnishings tailored to the residents’ needs.", "Kitchen, wardrobe, bedroom and bathroom."],
-        starowiejska: ["Bespoke fitted furniture tailored to the character of the apartment.", "Furniture and built-ins for a residential interior."],
-        "wrzeszcz-gdansk": ["Bespoke furniture designed for a cohesive, functional interior.", "Fitted furniture in an apartment."],
-        "garderoba-gdansk-stare-miasto": ["A bespoke wardrobe and fitted storage in an Old Town apartment.", "Storage built-ins."],
-        "kuchnia-gdansk-jasien": ["A bespoke kitchen designed as part of a residence.", "Kitchen fit-out."],
-        "bernadowska-gdynia": ["Made-to-measure furniture for a residence in Gdynia.", "Built-ins and interior furnishings."],
-        "stolema-gdansk": ["Made-to-measure fitted furniture for a residence.", "Furniture and built-ins for a home."],
-        "barbershop-pruszcz-gdanski": ["Fitted furniture and furnishings for a barbershop.", "Bespoke furniture for a commercial space."],
-        drzwi: ["Doors and fitted elements tailored to an individual interior design.", "Doors and made-to-measure built-ins."],
+        "chwarzno-gdynia": [
+          "Made-to-measure fitted furniture for an apartment in Chwarzno, Gdynia.",
+          "Kitchen, hallway and bathroom.",
+        ],
+        "grobla-gdansk": [
+          "Made-to-measure furniture for an apartment on Grobla Street.",
+          "Built-ins and interior furnishings.",
+        ],
+        "letnica-gdansk": [
+          "Made-to-measure furniture for an apartment in Gdańsk’s Letnica district.",
+          "Built-ins and apartment furnishings.",
+        ],
+        "przymorze-gdansk": [
+          "Custom furnishings tailored to the residents’ needs.",
+          "Kitchen, wardrobe, bedroom and bathroom.",
+        ],
+        starowiejska: [
+          "Bespoke fitted furniture tailored to the character of the apartment.",
+          "Furniture and built-ins for a residential interior.",
+        ],
+        "wrzeszcz-gdansk": [
+          "Bespoke furniture designed for a cohesive, functional interior.",
+          "Fitted furniture in an apartment.",
+        ],
+        "garderoba-gdansk-stare-miasto": [
+          "A bespoke wardrobe and fitted storage in an Old Town apartment.",
+          "Storage built-ins.",
+        ],
+        "kuchnia-gdansk-jasien": [
+          "A bespoke kitchen designed as part of a residence.",
+          "Kitchen fit-out.",
+        ],
+        "bernadowska-gdynia": [
+          "Made-to-measure furniture for a residence in Gdynia.",
+          "Built-ins and interior furnishings.",
+        ],
+        "stolema-gdansk": [
+          "Made-to-measure fitted furniture for a residence.",
+          "Furniture and built-ins for a home.",
+        ],
+        "barbershop-pruszcz-gdanski": [
+          "Fitted furniture and furnishings for a barbershop.",
+          "Bespoke furniture for a commercial space.",
+        ],
+        drzwi: [
+          "Doors and fitted elements tailored to an individual interior design.",
+          "Doors and made-to-measure built-ins.",
+        ],
       },
     },
     de: {
@@ -168,20 +230,60 @@
         commercial: "Gewerbliche Innenräume",
         doors: "Türen & Einbauten",
       },
-      titles: { wardrobe: "Ankleidezimmer", kitchen: "Küche", doors: "Türen & Einbauten" },
+      titles: {
+        wardrobe: "Ankleidezimmer",
+        kitchen: "Küche",
+        doors: "Türen & Einbauten",
+      },
       details: {
-        "chwarzno-gdynia": ["Maßgefertigte Einbaumöbel für ein Apartment in Chwarzno, Gdynia.", "Küche, Flur und Bad."],
-        "grobla-gdansk": ["Maßgefertigte Möbel für ein Apartment in der Grobla-Straße.", "Einbauten und Innenausstattung."],
-        "letnica-gdansk": ["Maßgefertigte Möbel für ein Apartment im Danziger Stadtteil Letnica.", "Einbauten und Apartmentausstattung."],
-        "przymorze-gdansk": ["Individuelle Einrichtung, abgestimmt auf die Bedürfnisse der Bewohner.", "Küche, Ankleidezimmer, Schlafzimmer und Bad."],
-        starowiejska: ["Maßgefertigte Einbaumöbel, passend zum Charakter des Apartments.", "Möbel und Einbauten für Wohnräume."],
-        "wrzeszcz-gdansk": ["Maßgefertigte Möbel für ein stimmiges und funktionales Interieur.", "Einbaumöbel in einem Apartment."],
-        "garderoba-gdansk-stare-miasto": ["Maßgefertigtes Ankleidezimmer und Einbauschränke in einem Apartment in der Altstadt.", "Einbauten für Stauraum."],
-        "kuchnia-gdansk-jasien": ["Eine maßgefertigte Küche als Teil einer Residenz.", "Kücheneinbau."],
-        "bernadowska-gdynia": ["Maßgefertigte Möbel für eine Residenz in Gdynia.", "Einbauten und Innenausstattung."],
-        "stolema-gdansk": ["Maßgefertigte Einbaumöbel für eine Residenz.", "Möbel und Einbauten im Wohnbereich."],
-        "barbershop-pruszcz-gdanski": ["Einbauten und Innenausstattung für einen Barbershop.", "Maßmöbel für Gewerberäume."],
-        drzwi: ["Türen und Einbauten passend zu einem individuellen Innenraumkonzept.", "Türen und Einbauten nach Maß."],
+        "chwarzno-gdynia": [
+          "Maßgefertigte Einbaumöbel für ein Apartment in Chwarzno, Gdynia.",
+          "Küche, Flur und Bad.",
+        ],
+        "grobla-gdansk": [
+          "Maßgefertigte Möbel für ein Apartment in der Grobla-Straße.",
+          "Einbauten und Innenausstattung.",
+        ],
+        "letnica-gdansk": [
+          "Maßgefertigte Möbel für ein Apartment im Danziger Stadtteil Letnica.",
+          "Einbauten und Apartmentausstattung.",
+        ],
+        "przymorze-gdansk": [
+          "Individuelle Einrichtung, abgestimmt auf die Bedürfnisse der Bewohner.",
+          "Küche, Ankleidezimmer, Schlafzimmer und Bad.",
+        ],
+        starowiejska: [
+          "Maßgefertigte Einbaumöbel, passend zum Charakter des Apartments.",
+          "Möbel und Einbauten für Wohnräume.",
+        ],
+        "wrzeszcz-gdansk": [
+          "Maßgefertigte Möbel für ein stimmiges und funktionales Interieur.",
+          "Einbaumöbel in einem Apartment.",
+        ],
+        "garderoba-gdansk-stare-miasto": [
+          "Maßgefertigtes Ankleidezimmer und Einbauschränke in einem Apartment in der Altstadt.",
+          "Einbauten für Stauraum.",
+        ],
+        "kuchnia-gdansk-jasien": [
+          "Eine maßgefertigte Küche als Teil einer Residenz.",
+          "Kücheneinbau.",
+        ],
+        "bernadowska-gdynia": [
+          "Maßgefertigte Möbel für eine Residenz in Gdynia.",
+          "Einbauten und Innenausstattung.",
+        ],
+        "stolema-gdansk": [
+          "Maßgefertigte Einbaumöbel für eine Residenz.",
+          "Möbel und Einbauten im Wohnbereich.",
+        ],
+        "barbershop-pruszcz-gdanski": [
+          "Einbauten und Innenausstattung für einen Barbershop.",
+          "Maßmöbel für Gewerberäume.",
+        ],
+        drzwi: [
+          "Türen und Einbauten passend zu einem individuellen Innenraumkonzept.",
+          "Türen und Einbauten nach Maß.",
+        ],
       },
     },
     nb: {
@@ -190,20 +292,60 @@
         commercial: "Kommersielt interiør",
         doors: "Dører og innredninger",
       },
-      titles: { wardrobe: "Garderobe", kitchen: "Kjøkken", doors: "Dører og innredninger" },
+      titles: {
+        wardrobe: "Garderobe",
+        kitchen: "Kjøkken",
+        doors: "Dører og innredninger",
+      },
       details: {
-        "chwarzno-gdynia": ["Innredning på mål til en leilighet i Chwarzno i Gdynia.", "Kjøkken, gang og bad."],
-        "grobla-gdansk": ["Møbler på mål til en leilighet i Grobla-gaten.", "Innredninger og interiørmøbler."],
-        "letnica-gdansk": ["Møbler på mål til en leilighet i bydelen Letnica i Gdańsk.", "Innredninger og møbler til leiligheten."],
-        "przymorze-gdansk": ["Individuell innredning tilpasset beboernes behov.", "Kjøkken, garderobe, soverom og bad."],
-        starowiejska: ["Innredning på mål tilpasset leilighetens særpreg.", "Møbler og innredninger til boligen."],
-        "wrzeszcz-gdansk": ["Møbler på mål utformet for et helhetlig og funksjonelt interiør.", "Innredning i en leilighet."],
-        "garderoba-gdansk-stare-miasto": ["Garderobe og innredning på mål i en leilighet i gamlebyen.", "Oppbevaringsinnredning."],
-        "kuchnia-gdansk-jasien": ["Kjøkken på mål utformet som en del av en residens.", "Kjøkkeninnredning."],
-        "bernadowska-gdynia": ["Møbler på mål til en residens i Gdynia.", "Innredninger og interiørelementer."],
-        "stolema-gdansk": ["Innredning på mål til en residens.", "Møbler og innredninger i boligen."],
-        "barbershop-pruszcz-gdanski": ["Innredning og møbler til en barbersalong.", "Møbler på mål til et næringslokale."],
-        drzwi: ["Dører og innredninger tilpasset en individuell interiørplan.", "Dører og innredning på mål."],
+        "chwarzno-gdynia": [
+          "Innredning på mål til en leilighet i Chwarzno i Gdynia.",
+          "Kjøkken, gang og bad.",
+        ],
+        "grobla-gdansk": [
+          "Møbler på mål til en leilighet i Grobla-gaten.",
+          "Innredninger og interiørmøbler.",
+        ],
+        "letnica-gdansk": [
+          "Møbler på mål til en leilighet i bydelen Letnica i Gdańsk.",
+          "Innredninger og møbler til leiligheten.",
+        ],
+        "przymorze-gdansk": [
+          "Individuell innredning tilpasset beboernes behov.",
+          "Kjøkken, garderobe, soverom og bad.",
+        ],
+        starowiejska: [
+          "Innredning på mål tilpasset leilighetens særpreg.",
+          "Møbler og innredninger til boligen.",
+        ],
+        "wrzeszcz-gdansk": [
+          "Møbler på mål utformet for et helhetlig og funksjonelt interiør.",
+          "Innredning i en leilighet.",
+        ],
+        "garderoba-gdansk-stare-miasto": [
+          "Garderobe og innredning på mål i en leilighet i gamlebyen.",
+          "Oppbevaringsinnredning.",
+        ],
+        "kuchnia-gdansk-jasien": [
+          "Kjøkken på mål utformet som en del av en residens.",
+          "Kjøkkeninnredning.",
+        ],
+        "bernadowska-gdynia": [
+          "Møbler på mål til en residens i Gdynia.",
+          "Innredninger og interiørelementer.",
+        ],
+        "stolema-gdansk": [
+          "Innredning på mål til en residens.",
+          "Møbler og innredninger i boligen.",
+        ],
+        "barbershop-pruszcz-gdanski": [
+          "Innredning og møbler til en barbersalong.",
+          "Møbler på mål til et næringslokale.",
+        ],
+        drzwi: [
+          "Dører og innredninger tilpasset en individuell interiørplan.",
+          "Dører og innredning på mål.",
+        ],
       },
     },
   };
@@ -224,11 +366,36 @@
     });
   }
   const interfaceCopy = {
-    pl: { gallery: "Otwórz galerię", photos: "ZDJĘĆ", photo: "zdjęcie", searchLocale: "pl" },
-    en: { gallery: "Open gallery", photos: "PHOTOS", photo: "photo", searchLocale: "en" },
-    de: { gallery: "Galerie öffnen", photos: "FOTOS", photo: "Foto", searchLocale: "de" },
-    nb: { gallery: "Åpne galleriet", photos: "BILDER", photo: "bilde", searchLocale: "nb" },
-  }[locale] || { gallery: "Open gallery", photos: "PHOTOS", photo: "photo", searchLocale: "en" };
+    pl: {
+      gallery: "Otwórz galerię",
+      photos: "ZDJĘĆ",
+      photo: "zdjęcie",
+      searchLocale: "pl",
+    },
+    en: {
+      gallery: "Open gallery",
+      photos: "PHOTOS",
+      photo: "photo",
+      searchLocale: "en",
+    },
+    de: {
+      gallery: "Galerie öffnen",
+      photos: "FOTOS",
+      photo: "Foto",
+      searchLocale: "de",
+    },
+    nb: {
+      gallery: "Åpne galleriet",
+      photos: "BILDER",
+      photo: "bilde",
+      searchLocale: "nb",
+    },
+  }[locale] || {
+    gallery: "Open gallery",
+    photos: "PHOTOS",
+    photo: "photo",
+    searchLocale: "en",
+  };
 
   const grid = document.getElementById("realizacje-grid");
   const filterButtons = [
@@ -251,11 +418,8 @@
   }
 
   const modalFields = {
-    category: document.getElementById("modal-project-category"),
     title: document.getElementById("modal-project-title"),
     location: document.getElementById("modal-project-loc"),
-    description: document.getElementById("modal-project-desc"),
-    scope: document.getElementById("modal-project-scope"),
     image: document.getElementById("modal-project-img"),
     gallery: document.getElementById("modal-project-gallery"),
   };
@@ -286,7 +450,10 @@
     card.dataset.desc = project.description;
     card.dataset.scope = project.scope;
     card.setAttribute("aria-haspopup", "dialog");
-    card.setAttribute("aria-label", `${interfaceCopy.gallery}: ${project.title}`);
+    card.setAttribute(
+      "aria-label",
+      `${interfaceCopy.gallery}: ${project.title}`,
+    );
 
     const imageFrame = document.createElement("span");
     imageFrame.className = "block aspect-[4/3] overflow-hidden zoom-card";
@@ -331,7 +498,9 @@
   grid.replaceChildren(...cards);
 
   const updateResults = () => {
-    const query = searchInput.value.trim().toLocaleLowerCase(interfaceCopy.searchLocale);
+    const query = searchInput.value
+      .trim()
+      .toLocaleLowerCase(interfaceCopy.searchLocale);
     let visibleCards = 0;
 
     cards.forEach((card) => {
@@ -370,11 +539,8 @@
   };
 
   const openProject = (project) => {
-    modalFields.category.textContent = project.categoryLabel;
     modalFields.title.textContent = project.title;
     modalFields.location.textContent = project.location;
-    modalFields.description.textContent = project.description;
-    modalFields.scope.textContent = project.scope;
 
     const showImage = (index) => {
       const filename = project.images[index];
@@ -393,7 +559,7 @@
         const thumbnail = document.createElement("button");
         thumbnail.type = "button";
         thumbnail.className =
-          "aspect-square overflow-hidden border-2 border-transparent transition-opacity hover:opacity-100";
+          "h-16 w-16 sm:h-20 sm:w-20 shrink-0 overflow-hidden border-2 border-transparent transition-opacity hover:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-gold";
         thumbnail.setAttribute(
           "aria-label",
           `${interfaceCopy.gallery} ${index + 1}: ${project.title}`,

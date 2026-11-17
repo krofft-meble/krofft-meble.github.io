@@ -1,8 +1,3 @@
-/**
- * KROFFT - Meble na Wymiar
- * Main JavaScript Engine (Vanilla JS, No external dependencies)
- */
-
 document.addEventListener("DOMContentLoaded", () => {
   initNavbar();
   initMobileMenu();
@@ -16,15 +11,16 @@ document.addEventListener("DOMContentLoaded", () => {
 const localeStrings = {
   pl: { open: "Otwórz menu", close: "Zamknij menu", sending: "Wysyłanie..." },
   en: { open: "Open menu", close: "Close menu", sending: "Sending..." },
-  de: { open: "Menü öffnen", close: "Menü schließen", sending: "Wird gesendet..." },
+  de: {
+    open: "Menü öffnen",
+    close: "Menü schließen",
+    sending: "Wird gesendet...",
+  },
   nb: { open: "Åpne menyen", close: "Lukk menyen", sending: "Sender..." },
 };
 const currentLocaleStrings =
   localeStrings[document.documentElement.lang] || localeStrings.en;
 
-/* ----------------------------------------------------
- * 1. Navbar Scrolled State & Active Links
- * ---------------------------------------------------- */
 function initNavbar() {
   const header = document.querySelector("header");
   if (!header) return;
@@ -40,7 +36,6 @@ function initNavbar() {
   window.addEventListener("scroll", handleScroll, { passive: true });
   handleScroll();
 
-  // Highlight current page link
   const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
   document.querySelectorAll(".nav-link").forEach((link) => {
     const linkUrl = new URL(link.getAttribute("href"), window.location.href);
@@ -57,9 +52,6 @@ function initNavbar() {
   });
 }
 
-/* ----------------------------------------------------
- * 2. Mobile Menu Drawer
- * ---------------------------------------------------- */
 function initMobileMenu() {
   const toggleBtn = document.getElementById("mobile-menu-toggle");
   const menu = document.getElementById("mobile-menu");
@@ -90,12 +82,10 @@ function initMobileMenu() {
     }
   });
 
-  // Close when clicking mobile links
   menu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", closeMenu);
   });
 
-  // Close on Escape key
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && menu.classList.contains("open")) {
       closeMenu();
@@ -103,9 +93,6 @@ function initMobileMenu() {
   });
 }
 
-/* ----------------------------------------------------
- * 3. Scroll Reveal Animation (Intersection Observer)
- * ---------------------------------------------------- */
 function initScrollReveal() {
   const revealElements = document.querySelectorAll(".reveal-item");
   if (!revealElements.length) return;
@@ -128,14 +115,11 @@ function initScrollReveal() {
 
     revealElements.forEach((el) => observer.observe(el));
   } else {
-    // Fallback for older browsers
+    // Reveal all elements when IntersectionObserver is unavailable.
     revealElements.forEach((el) => el.classList.add("revealed"));
   }
 }
 
-/* ----------------------------------------------------
- * 4. Contact Modal ("Porozmawiajmy")
- * ---------------------------------------------------- */
 function initContactModal() {
   const modal = document.getElementById("contact-dialog");
   const openButtons = document.querySelectorAll("[data-open-contact-modal]");
@@ -168,7 +152,6 @@ function initContactModal() {
     btn.addEventListener("click", closeModal);
   });
 
-  // Click outside dialog to close
   modal.addEventListener("click", (e) => {
     const dialogDimensions = modal.getBoundingClientRect();
     if (
@@ -185,7 +168,6 @@ function initContactModal() {
     document.body.style.overflow = "";
   });
 
-  // Handle contact form submission
   const form = document.getElementById("contact-form");
   const formSuccess = document.getElementById("contact-form-success");
 
@@ -214,9 +196,6 @@ function initContactModal() {
   }
 }
 
-/* ----------------------------------------------------
- * 5. Hero Carousel (01 / 04)
- * ---------------------------------------------------- */
 function initHeroSlider() {
   const slider = document.getElementById("hero-slider");
   if (!slider) return;
@@ -276,9 +255,6 @@ function initHeroSlider() {
   slider.addEventListener("mouseleave", () => startTimer());
 }
 
-/* ----------------------------------------------------
- * 6. Number Counter Animation
- * ---------------------------------------------------- */
 function initNumberCounters() {
   const counters = document.querySelectorAll(".counter-animate");
   if (!counters.length) return;
@@ -318,9 +294,6 @@ function initNumberCounters() {
   counters.forEach((c) => observer.observe(c));
 }
 
-/* ----------------------------------------------------
- * 7. Language Selector
- * ---------------------------------------------------- */
 function initLanguageSelector() {
   const langToggle = document.getElementById("lang-toggle");
   const langMenu = document.getElementById("lang-menu");

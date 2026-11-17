@@ -1,20 +1,17 @@
 <!doctype html>
 <html class="h-full" lang="pl">
   <head>
-    <!-- Main -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#0b1926" />
-    <title>Kontakt | KROFFT – porozmawiajmy o Twoim projekcie</title>
+    <title>Kontakt i wycena projektu | KROFFT</title>
 
-    <!-- Opis dla SEO -->
     <meta
       name="description"
       content="Skontaktuj się z KROFFT. Zadzwoń, napisz lub odwiedź naszą siedzibę przy ul. Łanowej 67B w Gdańsku."
     />
 
-    <!-- Linki do zasobów -->
     <link rel="preload" href="/assets/css/main.css" as="style" />
     <link rel="stylesheet" href="/assets/css/main.css" />
     <script>
@@ -30,7 +27,6 @@
       loadFontsCSS("/assets/css/fonts.css");
     </script>
 
-    <!-- Open Graph (fb, Discord, Messenger, LinkedIn itp.) -->
     <meta
       property="og:title"
       content="Kontakt | KROFFT – porozmawiajmy o Twoim projekcie"
@@ -46,7 +42,6 @@
       content="https://krofft.pl/assets/img/realizacje/starowiejska/1.webp"
     />
 
-    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -61,15 +56,17 @@
       content="https://krofft.pl/assets/img/realizacje/starowiejska/1.webp"
     />
 
-    <!-- SEO -->
     <link rel="canonical" href="https://krofft.pl/pl/kontakt/" />
     <link rel="alternate" hreflang="pl" href="https://krofft.pl/pl/kontakt/" />
     <link rel="alternate" hreflang="en" href="https://krofft.pl/en/kontakt/" />
     <link rel="alternate" hreflang="de" href="https://krofft.pl/de/kontakt/" />
     <link rel="alternate" hreflang="nb" href="https://krofft.pl/no/kontakt/" />
-    <link rel="alternate" hreflang="x-default" href="https://krofft.pl/en/kontakt/" />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://krofft.pl/en/kontakt/"
+    />
 
-    <!-- Struktura danych - JSON-LD -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -101,14 +98,12 @@
   <body
     class="bg-white text-gray-900 font-sans antialiased selection:bg-brand-gold selection:text-brand-navy"
   >
-    <!-- ==================== HEADER ==================== -->
     <header
       class="fixed top-0 left-0 w-full z-50 header-glass transition-all duration-300"
     >
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between gap-4"
       >
-        <!-- Logo -->
         <a href="/pl/" class="flex shrink-0 flex-col items-center group">
           <span
             class="navbar-logo block w-32 sm:w-48"
@@ -122,10 +117,14 @@
           </span>
         </a>
 
-        <!-- Desktop Navigation -->
         <nav
           class="hidden xl:flex items-center space-x-5 2xl:space-x-8 text-[11px] tracking-[0.12em] uppercase font-medium"
         >
+          <a
+            href="/pl/wspolpraca-b2b/"
+            class="nav-link text-gray-300 hover:text-white transition-colors"
+            >B2B</a
+          >
           <a
             href="/pl/o-nas/"
             class="nav-link text-gray-300 hover:text-white transition-colors"
@@ -158,7 +157,6 @@
           >
         </nav>
 
-        <!-- Right Actions -->
         <div class="hidden xl:flex items-center space-x-4 2xl:space-x-6">
           <div class="relative">
             <button
@@ -172,24 +170,52 @@
                 />
               </svg>
             </button>
-            <div id="lang-menu" aria-label="Wybierz język" class="hidden absolute right-0 mt-2 w-28 bg-brand-navyDark border border-brand-gold/30 shadow-xl py-1 rounded-sm text-[12px] text-gray-300">
-              <a href="/pl/kontakt/" lang="pl" aria-label="polski" aria-current="page" class="block px-3 py-1 hover:bg-brand-navy hover:text-white text-brand-gold">PL</a>
-              <a href="/en/kontakt/" lang="en" aria-label="English" class="block px-3 py-1 hover:bg-brand-navy hover:text-white">EN</a>
-              <a href="/de/kontakt/" lang="de" aria-label="Deutsch" class="block px-3 py-1 hover:bg-brand-navy hover:text-white">DE</a>
-              <a href="/no/kontakt/" lang="nb" aria-label="norsk bokmål" class="block px-3 py-1 hover:bg-brand-navy hover:text-white">NO</a>
+            <div
+              id="lang-menu"
+              aria-label="Wybierz język"
+              class="hidden absolute right-0 mt-2 w-28 bg-brand-navyDark border border-brand-gold/30 shadow-xl py-1 rounded-sm text-[12px] text-gray-300"
+            >
+              <a
+                href="/pl/kontakt/"
+                lang="pl"
+                aria-label="polski"
+                aria-current="page"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white text-brand-gold"
+                >PL</a
+              >
+              <a
+                href="/en/kontakt/"
+                lang="en"
+                aria-label="English"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white"
+                >EN</a
+              >
+              <a
+                href="/de/kontakt/"
+                lang="de"
+                aria-label="Deutsch"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white"
+                >DE</a
+              >
+              <a
+                href="/no/kontakt/"
+                lang="nb"
+                aria-label="norsk bokmål"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white"
+                >NO</a
+              >
             </div>
           </div>
 
-          <button
-            data-open-contact-modal
+          <a
+            href="/pl/kontakt/"
             class="group inline-flex items-center space-x-3 px-5 py-2.5 bg-brand-navy/80 hover:bg-brand-navy text-white text-[12px] tracking-[0.14em] uppercase font-medium border border-white/20 hover:border-brand-gold transition-all duration-300"
           >
             <span>POROZMAWIAJMY</span>
             <span class="arrow-nudge text-brand-gold font-bold">→</span>
-          </button>
+          </a>
         </div>
 
-        <!-- Mobile Menu Button -->
         <button
           id="mobile-menu-toggle"
           aria-label="Otwórz menu"
@@ -210,14 +236,18 @@
       </div>
     </header>
 
-    <!-- Mobile Drawer Menu -->
     <div
       id="mobile-menu"
-      class="mobile-menu closed fixed inset-0 z-40 bg-brand-navyDark/98 backdrop-blur-2xl flex flex-col justify-between p-6 pt-28 xl:hidden"
+      class="mobile-menu closed fixed inset-0 z-40 overflow-y-auto bg-brand-navyDark/98 backdrop-blur-2xl flex flex-col justify-between p-6 pt-28 xl:hidden"
     >
       <nav
         class="flex flex-col space-y-6 text-lg sm:text-xl font-serif tracking-wider text-white"
       >
+        <a
+          href="/pl/wspolpraca-b2b/"
+          class="hover:text-brand-gold transition-colors"
+          >Współpraca</a
+        >
         <a href="/pl/" class="hover:text-brand-gold transition-colors"
           >GŁÓWNA</a
         >
@@ -240,10 +270,42 @@
         >
         <a href="/pl/kontakt/" class="text-brand-gold">KONTAKT</a>
       </nav>
-      <div class="border-t border-white/10 pt-4 pb-4"><p class="mb-2 text-xs uppercase tracking-widest text-gray-400">Język</p><div class="flex flex-wrap gap-3 text-sm text-gray-300"><a href="/pl/kontakt/" lang="pl" aria-label="polski" aria-current="page" class="px-2 py-1 hover:text-brand-gold text-brand-gold font-semibold">PL</a>
-              <a href="/en/kontakt/" lang="en" aria-label="English" class="px-2 py-1 hover:text-brand-gold">EN</a>
-              <a href="/de/kontakt/" lang="de" aria-label="Deutsch" class="px-2 py-1 hover:text-brand-gold">DE</a>
-              <a href="/no/kontakt/" lang="nb" aria-label="norsk bokmål" class="px-2 py-1 hover:text-brand-gold">NO</a></div></div>
+      <div class="border-t border-white/10 pt-4 pb-4">
+        <p class="mb-2 text-xs uppercase tracking-widest text-gray-400">
+          Język
+        </p>
+        <div class="flex flex-wrap gap-3 text-sm text-gray-300">
+          <a
+            href="/pl/kontakt/"
+            lang="pl"
+            aria-label="polski"
+            aria-current="page"
+            class="px-2 py-1 hover:text-brand-gold text-brand-gold font-semibold"
+            >PL</a
+          >
+          <a
+            href="/en/kontakt/"
+            lang="en"
+            aria-label="English"
+            class="px-2 py-1 hover:text-brand-gold"
+            >EN</a
+          >
+          <a
+            href="/de/kontakt/"
+            lang="de"
+            aria-label="Deutsch"
+            class="px-2 py-1 hover:text-brand-gold"
+            >DE</a
+          >
+          <a
+            href="/no/kontakt/"
+            lang="nb"
+            aria-label="norsk bokmål"
+            class="px-2 py-1 hover:text-brand-gold"
+            >NO</a
+          >
+        </div>
+      </div>
       <div class="border-t border-white/10 pt-6 space-y-4">
         <div
           class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-gray-300"
@@ -255,22 +317,21 @@
             >biuro@krofft.pl</a
           >
         </div>
-        <button
-          data-open-contact-modal
+        <a
+          href="/pl/kontakt/"
           class="w-full py-3.5 bg-brand-gold text-brand-navy font-medium text-xs uppercase tracking-widest text-center hover:bg-brand-goldHover transition-colors"
         >
           POROZMAWIAJMY O PROJEKCIE →
-        </button>
+        </a>
       </div>
     </div>
 
-    <!-- ==================== HERO SECTION ==================== -->
     <section
       class="relative min-h-[60vh] bg-brand-dark text-white flex items-center pt-24 sm:pt-20 overflow-hidden"
     >
       <div class="absolute inset-0">
         <img
-          src="/assets/img/realizacje/starowiejska/1.webp"
+          src="/assets/img/realizacje/barbershop-pruszcz-gdanski/8.webp"
           alt="Drewniane wykończenie wnętrza wykonane na wymiar"
           class="w-full h-full object-cover object-center filter brightness-[0.65]"
         />
@@ -316,15 +377,9 @@
             </div>
           </div>
         </div>
-        <p
-          class="hidden lg:block absolute right-8 bottom-12 border-l border-white/70 pl-4 text-[10px] leading-relaxed tracking-wider uppercase text-gray-200"
-        >
-          Rzemiosło.<br />Materiał.<br />Ludzie.
-        </p>
       </div>
     </section>
 
-    <!-- ==================== CONTACT INFO & FORM SECTION ==================== -->
     <section
       class="py-8 sm:py-12 bg-brand-cream border-t border-brand-borderLight"
     >
@@ -332,7 +387,6 @@
         <div
           class="grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-7 items-start"
         >
-          <!-- Left Column: Direct Info -->
           <div class="lg:col-span-7 space-y-5 reveal-item">
             <div class="space-y-2">
               <span
@@ -355,7 +409,6 @@
             <div
               class="grid grid-cols-2 gap-4 pt-4 border-t border-brand-borderLight text-sm text-gray-800"
             >
-              <!-- Address -->
               <div class="flex items-start space-x-3">
                 <div
                   class="w-10 h-10 rounded-full border border-brand-borderLight bg-white flex items-center justify-center text-brand-navy shrink-0"
@@ -391,7 +444,6 @@
                 </div>
               </div>
 
-              <!-- Phone -->
               <div class="flex items-start space-x-3">
                 <div
                   class="w-10 h-10 rounded-full border border-brand-borderLight bg-white flex items-center justify-center text-brand-navy shrink-0"
@@ -426,7 +478,6 @@
                 </div>
               </div>
 
-              <!-- Email -->
               <div class="flex items-start space-x-3">
                 <div
                   class="w-10 h-10 rounded-full border border-brand-borderLight bg-white flex items-center justify-center text-brand-navy shrink-0"
@@ -461,7 +512,6 @@
                 </div>
               </div>
 
-              <!-- WhatsApp -->
               <div class="flex items-start space-x-3">
                 <div
                   class="w-10 h-10 rounded-full border border-brand-borderLight bg-white flex items-center justify-center text-brand-gold shrink-0"
@@ -500,7 +550,6 @@
             </p>
           </div>
 
-          <!-- Right Column: Interactive Form Card -->
           <div
             class="lg:col-span-7 bg-transparent border-t border-brand-borderLight pt-5 reveal-item reveal-delay-200"
           >
@@ -515,18 +564,27 @@
                 Opowiedz nam o swoim projekcie.
               </h3>
               <p class="text-xs text-gray-600 font-light">
-                Formularz przygotuje wiadomość w Twoim programie pocztowym.
-                Możesz też napisać bezpośrednio na biuro@krofft.pl.
+                Wyślij zapytanie przez formularz lub napisz bezpośrednio na
+                biuro@krofft.pl.
               </p>
             </div>
 
             <form
               id="contact-page-form"
-              action="mailto:biuro@krofft.pl"
-              method="post"
-              enctype="text/plain"
+              action="https://api.staticforms.dev/submit"
+              method="POST"
               class="space-y-3"
             >
+              <input
+                type="hidden"
+                name="apiKey"
+                value="sf_225791bd5776dd7f2b6c24fa"
+              />
+              <input
+                type="hidden"
+                name="redirectTo"
+                value="https://krofft.pl/pl/kontakt/?sent=1"
+              />
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label
@@ -537,7 +595,7 @@
                   <input
                     type="text"
                     id="contact-name"
-                    name="Imię i nazwisko"
+                    name="name"
                     required
                     placeholder="Jan Kowalski"
                     class="w-full bg-brand-cream border border-brand-borderLight px-4 py-3 text-sm text-gray-900 focus:outline-none focus:border-brand-gold transition-colors"
@@ -552,7 +610,7 @@
                   <input
                     type="email"
                     id="contact-email"
-                    name="E-mail"
+                    name="email"
                     required
                     placeholder="jan@example.com"
                     class="w-full bg-brand-cream border border-brand-borderLight px-4 py-3 text-sm text-gray-900 focus:outline-none focus:border-brand-gold transition-colors"
@@ -570,7 +628,7 @@
                   <input
                     type="tel"
                     id="contact-phone"
-                    name="Telefon"
+                    name="phone"
                     placeholder="+48 600 000 000"
                     class="w-full bg-brand-cream border border-brand-borderLight px-4 py-3 text-sm text-gray-900 focus:outline-none focus:border-brand-gold transition-colors"
                   />
@@ -584,7 +642,7 @@
                   <input
                     type="text"
                     id="contact-subject"
-                    name="Temat"
+                    name="subject"
                     placeholder="Temat wiadomości"
                     class="w-full bg-brand-cream border border-brand-borderLight px-4 py-3 text-sm text-gray-900 focus:outline-none focus:border-brand-gold transition-colors"
                   />
@@ -600,7 +658,7 @@
                 <textarea
                   rows="4"
                   id="contact-message"
-                  name="Wiadomość"
+                  name="message"
                   required
                   placeholder="Opisz zakres mebli, planowaną datę montażu lub załącz dodatkowe wytyczne projektowe..."
                   class="w-full bg-brand-cream border border-brand-borderLight px-4 py-3 text-sm text-gray-900 focus:outline-none focus:border-brand-gold transition-colors"
@@ -613,7 +671,7 @@
                 <input
                   type="checkbox"
                   id="zgoda-page"
-                  name="Zgoda na przetwarzanie danych"
+                  name="consent"
                   value="Tak"
                   required
                   class="mt-0.5 accent-brand-gold"
@@ -628,20 +686,35 @@
                 >
               </div>
 
+              <input
+                type="text"
+                name="honeypot"
+                class="hidden"
+                tabindex="-1"
+                autocomplete="off"
+              />
               <button
                 type="submit"
                 class="inline-flex items-center gap-4 px-6 py-3.5 bg-brand-navy hover:bg-brand-navyDark text-white font-medium text-[10px] uppercase tracking-[0.2em] transition-all"
               >
-                PRZYGOTUJ WIADOMOŚĆ E-MAIL →
+                WYŚLIJ WIADOMOŚĆ →
               </button>
             </form>
+            <p
+              id="contact-form-success"
+              class="hidden border border-green-700/20 bg-green-50 p-4 text-sm text-green-900"
+              role="status"
+            >
+              Dziękujemy za wiadomość. Skontaktujemy się z Tobą najszybciej, jak
+              to możliwe.
+            </p>
           </div>
           <figure
             class="lg:col-start-8 lg:row-start-1 lg:row-span-2 lg:col-span-5 reveal-item reveal-delay-200"
           >
             <div class="aspect-5/3 lg:aspect-4/5 max-h-160 overflow-hidden">
               <img
-                src="/assets/img/realizacje/chwarzno-gdynia/1.webp"
+                src="/assets/img/realizacje/drzwi/1.webp"
                 alt="Drewniana zabudowa i wykończenie wnętrza KROFFT"
                 class="w-full h-full object-cover"
               />
@@ -691,7 +764,6 @@
       </div>
     </section>
 
-    <!-- ==================== FOOTER ==================== -->
     <footer
       class="bg-brand-navy text-white pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-10 lg:pb-12 border-t border-brand-navyLight"
     >
@@ -868,156 +940,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- Contact Modal -->
-    <dialog id="contact-dialog" class="contact-modal p-0 rounded-none">
-      <div
-        class="relative bg-brand-navyDark text-white border border-brand-gold/40 max-w-xl mx-auto p-6 sm:p-10 shadow-2xl"
-      >
-        <button
-          data-close-contact-modal
-          aria-label="Zamknij modal"
-          class="absolute top-5 right-5 text-gray-400 hover:text-white transition-colors"
-        >
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-
-        <div class="space-y-2 mb-6">
-          <span
-            class="text-[10px] tracking-[0.25em] uppercase text-brand-gold font-semibold block"
-            >DARMOWA KONSULTACJA I WYCENA</span
-          >
-          <h3 class="font-serif text-2xl sm:text-3xl font-normal">
-            Porozmawiajmy o Twoim projekcie.
-          </h3>
-          <p class="text-xs text-gray-300 font-light">
-            Zostaw nam wiadomość lub dane kontaktowe – odezwiemy się w ciągu
-            24h.
-          </p>
-        </div>
-
-        <form id="contact-form" class="space-y-4">
-          <div>
-            <label
-              class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-              >Imię i nazwisko</label
-            >
-            <input
-              type="text"
-              required
-              placeholder="Jan Kowalski"
-              class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-            />
-          </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label
-                class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-                >Telefon</label
-              >
-              <input
-                type="tel"
-                required
-                placeholder="+48 000 000 000"
-                class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-              />
-            </div>
-            <div>
-              <label
-                class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-                >E-mail</label
-              >
-              <input
-                type="email"
-                required
-                placeholder="jan@example.com"
-                class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-              />
-            </div>
-          </div>
-          <div>
-            <label
-              class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-              >Typ inwestycji</label
-            >
-            <select
-              class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-            >
-              <option value="apartamenty">Apartament / Rezydencja</option>
-              <option value="komercyjne">Wnętrza komercyjne / Biuro</option>
-              <option value="kliniki">Klinika / Przestrzeń medyczna</option>
-              <option value="stoczniowa">Branża stoczniowa (Marine)</option>
-              <option value="inne">Inne indywidualne zamówienie</option>
-            </select>
-          </div>
-          <div>
-            <label
-              class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-              >Wiadomość / Opis projektu</label
-            >
-            <textarea
-              rows="3"
-              placeholder="Opisz krótko zakres mebli, metraż lub załącz uwagi..."
-              class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-            ></textarea>
-          </div>
-          <div
-            class="flex items-start space-x-2 text-[11px] text-gray-400 pt-1"
-          >
-            <input
-              type="checkbox"
-              id="rodo"
-              required
-              class="mt-0.5 accent-brand-gold"
-            />
-            <label for="rodo"
-              >Wyrażam zgodę na przetwarzanie danych osobowych w celu kontaktu
-              ofertowego.</label
-            >
-          </div>
-          <button
-            type="submit"
-            class="w-full py-3.5 bg-brand-gold text-brand-navy font-semibold text-xs uppercase tracking-[0.2em] hover:bg-brand-goldHover transition-colors mt-2"
-          >
-            WYŚLIJ WIADOMOŚĆ →
-          </button>
-        </form>
-
-        <div
-          id="contact-form-success"
-          class="hidden text-center py-8 space-y-4"
-        >
-          <div
-            class="w-12 h-12 rounded-full border-2 border-brand-gold text-brand-gold flex items-center justify-center mx-auto text-xl"
-          >
-            ✓
-          </div>
-          <h4 class="font-serif text-2xl">Dziękujemy za kontakt!</h4>
-          <p class="text-xs text-gray-300 max-w-sm mx-auto">
-            Twoja wiadomość została pomyślnie wysłana. Skontaktujemy się z Tobą
-            w najszybszym możliwym terminie.
-          </p>
-          <button
-            data-close-contact-modal
-            class="inline-block mt-4 px-6 py-2 border border-white/30 text-xs uppercase tracking-wider text-white hover:border-brand-gold hover:text-brand-gold"
-          >
-            Zamknij okno
-          </button>
-        </div>
-      </div>
-    </dialog>
 
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/cookie-consent.js"></script>

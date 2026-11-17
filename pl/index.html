@@ -1,20 +1,17 @@
 <!doctype html>
 <html class="h-full" lang="pl">
   <head>
-    <!-- Main -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#0b1926" />
-    <title>KROFFT. Profesjonalne meble na zamówienie.</title>
+    <title>Meble na wymiar i zabudowy kontraktowe | KROFFT</title>
 
-    <!-- Opis dla SEO -->
     <meta
       name="description"
       content="Indywidualne projekty, wysokiej klasy materiały oraz wieloletnie doświadczenie. Wykonujemy realizacje dla osób fizycznych, firm, powierzchni komercyjnych oraz branży stoczniowej."
     />
 
-    <!-- Linki do zasobów -->
     <link rel="stylesheet" href="/assets/css/main.css" />
     <script>
       function loadFontsCSS(href) {
@@ -29,7 +26,6 @@
       loadFontsCSS("/assets/css/fonts.css");
     </script>
 
-    <!-- Open Graph (fb, Discord, Messenger, LinkedIn itp.) -->
     <meta
       property="og:title"
       content="KROFFT. Profesjonalne meble na zamówienie."
@@ -45,7 +41,6 @@
       content="https://krofft.pl/assets/img/realizacje/starowiejska/1.webp"
     />
 
-    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -60,7 +55,6 @@
       content="https://krofft.pl/assets/img/realizacje/starowiejska/1.webp"
     />
 
-    <!-- Favicony -->
     <link
       rel="icon"
       type="image/png"
@@ -77,7 +71,6 @@
     <meta name="apple-mobile-web-app-title" content="KROFFT" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 
-    <!-- SEO -->
     <link rel="canonical" href="https://krofft.pl/pl/" />
     <link rel="alternate" hreflang="pl" href="https://krofft.pl/pl/" />
     <link rel="alternate" hreflang="en" href="https://krofft.pl/en/" />
@@ -85,7 +78,6 @@
     <link rel="alternate" hreflang="nb" href="https://krofft.pl/no/" />
     <link rel="alternate" hreflang="x-default" href="https://krofft.pl/en/" />
 
-    <!-- Struktura danych - JSON-LD -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -117,14 +109,12 @@
   <body
     class="home-page bg-white text-gray-900 antialiased selection:bg-brand-gold selection:text-brand-navy"
   >
-    <!-- ==================== HEADER ==================== -->
     <header
       class="fixed top-0 left-0 w-full z-50 header-glass transition-all duration-300"
     >
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between gap-4"
       >
-        <!-- Logo -->
         <a href="/pl/" class="flex shrink-0 flex-col items-center group">
           <span
             class="navbar-logo block w-32 sm:w-48"
@@ -138,10 +128,14 @@
           </span>
         </a>
 
-        <!-- Desktop Navigation -->
         <nav
           class="hidden xl:flex items-center space-x-5 2xl:space-x-8 text-[11px] tracking-[0.12em] uppercase font-medium"
         >
+          <a
+            href="/pl/wspolpraca-b2b/"
+            class="nav-link text-gray-300 hover:text-white transition-colors"
+            >B2B</a
+          >
           <a
             href="/pl/o-nas/"
             class="nav-link text-gray-300 hover:text-white transition-colors"
@@ -174,9 +168,7 @@
           >
         </nav>
 
-        <!-- Right Actions: Language & CTA -->
         <div class="hidden xl:flex items-center space-x-4 2xl:space-x-6">
-          <!-- Language dropdown -->
           <div class="relative">
             <button
               id="lang-toggle"
@@ -189,25 +181,52 @@
                 />
               </svg>
             </button>
-            <div id="lang-menu" aria-label="Wybierz język" class="hidden absolute right-0 mt-2 w-28 bg-brand-navyDark border border-brand-gold/30 shadow-xl py-1 rounded-sm text-[12px] text-gray-300">
-              <a href="/pl/" lang="pl" aria-label="polski" aria-current="page" class="block px-3 py-1 hover:bg-brand-navy hover:text-white text-brand-gold">PL</a>
-              <a href="/en/" lang="en" aria-label="English" class="block px-3 py-1 hover:bg-brand-navy hover:text-white">EN</a>
-              <a href="/de/" lang="de" aria-label="Deutsch" class="block px-3 py-1 hover:bg-brand-navy hover:text-white">DE</a>
-              <a href="/no/" lang="nb" aria-label="norsk bokmål" class="block px-3 py-1 hover:bg-brand-navy hover:text-white">NO</a>
+            <div
+              id="lang-menu"
+              aria-label="Wybierz język"
+              class="hidden absolute right-0 mt-2 w-28 bg-brand-navyDark border border-brand-gold/30 shadow-xl py-1 rounded-sm text-[12px] text-gray-300"
+            >
+              <a
+                href="/pl/"
+                lang="pl"
+                aria-label="polski"
+                aria-current="page"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white text-brand-gold"
+                >PL</a
+              >
+              <a
+                href="/en/"
+                lang="en"
+                aria-label="English"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white"
+                >EN</a
+              >
+              <a
+                href="/de/"
+                lang="de"
+                aria-label="Deutsch"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white"
+                >DE</a
+              >
+              <a
+                href="/no/"
+                lang="nb"
+                aria-label="norsk bokmål"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white"
+                >NO</a
+              >
             </div>
           </div>
 
-          <!-- CTA Button -->
-          <button
-            data-open-contact-modal
+          <a
+            href="/pl/kontakt/"
             class="group inline-flex items-center space-x-2 px-3 py-2 2xl:space-x-3 2xl:px-5 2xl:py-2.5 bg-brand-navy/80 hover:bg-brand-navy text-white text-[11px] tracking-[0.12em] uppercase font-medium border border-white/20 hover:border-brand-gold transition-all duration-300"
           >
             <span>POROZMAWIAJMY</span>
             <span class="arrow-nudge text-brand-gold font-bold">→</span>
-          </button>
+          </a>
         </div>
 
-        <!-- Mobile Menu Button -->
         <button
           id="mobile-menu-toggle"
           aria-label="Otwórz menu"
@@ -228,14 +247,18 @@
       </div>
     </header>
 
-    <!-- Mobile Drawer Menu -->
     <div
       id="mobile-menu"
-      class="mobile-menu closed fixed inset-0 z-40 bg-brand-navyDark/98 backdrop-blur-2xl flex flex-col justify-between p-6 pt-28 xl:hidden"
+      class="mobile-menu closed fixed inset-0 z-40 overflow-y-auto bg-brand-navyDark/98 backdrop-blur-2xl flex flex-col justify-between p-6 pt-28 xl:hidden"
     >
       <nav
         class="flex flex-col space-y-6 text-lg sm:text-xl font-serif tracking-wider text-white"
       >
+        <a
+          href="/pl/wspolpraca-b2b/"
+          class="hover:text-brand-gold transition-colors"
+          >Współpraca</a
+        >
         <a href="/pl/" class="text-brand-gold">GŁÓWNA</a>
         <a href="/pl/o-nas/" class="hover:text-brand-gold transition-colors"
           >O NAS</a
@@ -259,10 +282,42 @@
         >
       </nav>
 
-      <div class="border-t border-white/10 pt-4 pb-4"><p class="mb-2 text-xs uppercase tracking-widest text-gray-400">Język</p><div class="flex flex-wrap gap-3 text-sm text-gray-300"><a href="/pl/" lang="pl" aria-label="polski" aria-current="page" class="px-2 py-1 hover:text-brand-gold text-brand-gold font-semibold">PL</a>
-              <a href="/en/" lang="en" aria-label="English" class="px-2 py-1 hover:text-brand-gold">EN</a>
-              <a href="/de/" lang="de" aria-label="Deutsch" class="px-2 py-1 hover:text-brand-gold">DE</a>
-              <a href="/no/" lang="nb" aria-label="norsk bokmål" class="px-2 py-1 hover:text-brand-gold">NO</a></div></div>
+      <div class="border-t border-white/10 pt-4 pb-4">
+        <p class="mb-2 text-xs uppercase tracking-widest text-gray-400">
+          Język
+        </p>
+        <div class="flex flex-wrap gap-3 text-sm text-gray-300">
+          <a
+            href="/pl/"
+            lang="pl"
+            aria-label="polski"
+            aria-current="page"
+            class="px-2 py-1 hover:text-brand-gold text-brand-gold font-semibold"
+            >PL</a
+          >
+          <a
+            href="/en/"
+            lang="en"
+            aria-label="English"
+            class="px-2 py-1 hover:text-brand-gold"
+            >EN</a
+          >
+          <a
+            href="/de/"
+            lang="de"
+            aria-label="Deutsch"
+            class="px-2 py-1 hover:text-brand-gold"
+            >DE</a
+          >
+          <a
+            href="/no/"
+            lang="nb"
+            aria-label="norsk bokmål"
+            class="px-2 py-1 hover:text-brand-gold"
+            >NO</a
+          >
+        </div>
+      </div>
 
       <div class="border-t border-white/10 pt-6 space-y-4">
         <div
@@ -275,21 +330,19 @@
             >biuro@krofft.pl</a
           >
         </div>
-        <button
-          data-open-contact-modal
+        <a
+          href="/pl/kontakt/"
           class="w-full py-3.5 bg-brand-gold text-brand-navy font-medium text-xs uppercase tracking-widest text-center hover:bg-brand-goldHover transition-colors"
         >
           POROZMAWIAJMY O PROJEKCIE →
-        </button>
+        </a>
       </div>
     </div>
 
-    <!-- ==================== HERO SECTION ==================== -->
     <section
       id="hero-slider"
       class="relative min-h-screen bg-brand-dark text-white flex items-center pt-24 sm:pt-20 overflow-hidden"
     >
-      <!-- Background Slides with Placeholders -->
       <div class="absolute inset-0">
         <div
           class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out"
@@ -383,12 +436,10 @@
         </div>
       </div>
 
-      <!-- Main Content Container -->
       <div
         class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 lg:py-20"
       >
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <!-- Left: Headline & CTA -->
           <div
             class="lg:col-span-8 space-y-6 sm:space-y-8 reveal-item revealed"
           >
@@ -417,7 +468,6 @@
               </a>
             </div>
 
-            <!-- Bottom Left: Carousel Number & Controls -->
             <div
               class="pt-12 sm:pt-20 flex items-center space-x-6 text-sm tracking-widest text-gray-300"
             >
@@ -447,9 +497,8 @@
             </div>
           </div>
 
-          <!-- Right: Vertical Category Menu & NAVORA Card -->
           <div
-            class="lg:col-span-4 hidden lg:flex flex-col space-y-4 reveal-item revealed reveal-delay-200"
+            class="col-span-1 lg:col-span-4 flex flex-col space-y-4 reveal-item revealed reveal-delay-200"
           >
             <div class="space-y-3 text-right">
               <a
@@ -482,8 +531,7 @@
               </a>
             </div>
 
-            <!-- Marine Navora Card -->
-            <div class="mt-8 pt-4">
+            <div class="hidden mt-8 pt-4">
               <a
                 href="/pl/realizacje/?cat=stoczniowa"
                 class="group relative block overflow-hidden border border-white/15 bg-brand-navyDark/80 hover:border-brand-gold/60 transition-all duration-500 p-6"
@@ -532,13 +580,11 @@
       </div>
     </section>
 
-    <!-- ==================== SECTION: MATERIAŁY ==================== -->
     <section
       class="py-14 sm:py-20 bg-brand-cream border-t border-brand-borderLight"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-5 lg:px-6">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          <!-- Left Title & Link -->
           <div class="lg:col-span-3 reveal-item">
             <div
               class="text-3xl sm:text-4xl xl:text-5xl text-gray-900 leading-[1.1]"
@@ -553,12 +599,10 @@
             </div>
           </div>
 
-          <!-- Right: 8 Swatches -->
           <div class="lg:col-span-9">
             <div
               class="materials-grid grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 sm:gap-5"
             >
-              <!-- Swatch 1 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -581,7 +625,6 @@
                 </div>
               </div>
 
-              <!-- Swatch 2 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -604,7 +647,6 @@
                 </div>
               </div>
 
-              <!-- Swatch 3 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -627,7 +669,6 @@
                 </div>
               </div>
 
-              <!-- Swatch 4 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -650,7 +691,6 @@
                 </div>
               </div>
 
-              <!-- Swatch 5 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -673,7 +713,6 @@
                 </div>
               </div>
 
-              <!-- Swatch 6 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -696,7 +735,6 @@
                 </div>
               </div>
 
-              <!-- Swatch 7 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -719,7 +757,6 @@
                 </div>
               </div>
 
-              <!-- Swatch 8 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -747,7 +784,6 @@
       </div>
     </section>
 
-    <!-- ==================== SECTION: WŁASNA PRODUKCJA ==================== -->
     <section
       id="produkcja"
       class="py-16 sm:py-20 bg-brand-charcoal text-white relative"
@@ -783,11 +819,9 @@
             </div>
           </div>
 
-          <!-- 3 Production Cards -->
           <div
             class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5 h-full"
           >
-            <!-- Card 1: Stolarnia -->
             <div
               class="group relative overflow-hidden bg-brand-dark border border-white/10 card-border-glow reveal-item reveal-delay-100"
             >
@@ -812,7 +846,6 @@
               </div>
             </div>
 
-            <!-- Card 2: Tapicernia -->
             <div
               class="group relative overflow-hidden bg-brand-dark border border-white/10 card-border-glow reveal-item reveal-delay-200"
             >
@@ -837,7 +870,6 @@
               </div>
             </div>
 
-            <!-- Card 3: Montaż -->
             <div
               class="group relative overflow-hidden bg-brand-dark border border-white/10 card-border-glow reveal-item reveal-delay-300"
             >
@@ -866,107 +898,250 @@
       </div>
     </section>
 
-    <!-- ==================== SECTION: WYBRANE REALIZACJE (Image 1) ==================== -->
-    <section
-      class="py-14 sm:py-24 lg:py-32 bg-brand-cream border-t border-brand-borderLight"
-    >
+    <section class="py-1 sm:py-14 lg:py-20 bg-brand-navy">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Section Header -->
-        <div
-          class="flex items-center justify-between mb-12 sm:mb-16 reveal-item"
-        >
-          <span
-            class="text-xs uppercase tracking-[0.25em] text-gray-600 font-semibold"
+        <div class="text-center mb-8 sm:mb-10 reveal-item">
+          <h2
+            class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal text-white"
           >
-            WYBRANE REALIZACJE
-          </span>
-          <a
-            href="/pl/realizacje/"
-            class="group inline-flex items-center space-x-2 text-xs uppercase tracking-[0.2em] font-semibold text-gray-900 hover:text-brand-gold transition-colors"
+            Wybrane realizacje
+          </h2>
+          <p
+            class="mt-4 text-[9px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.25em] text-gray-300"
           >
-            <span>ZOBACZ WSZYSTKIE</span>
-            <span class="arrow-nudge">→</span>
-          </a>
+            PRECYZJA WYKONANIA
+            <span class="mx-2 sm:mx-4 text-brand-gold">|</span>
+            NOWOCZESNA TECHNOLOGIA
+            <span class="mx-2 sm:mx-4 text-brand-gold">|</span>
+            PONADCZASOWY DESIGN
+          </p>
         </div>
 
-        <!-- 3 Showcase Project Cards -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Project 1 -->
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-6">
           <a
             href="/pl/realizacje/?cat=apartamenty"
             class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-100"
+            aria-label="Stolema, Gdańsk"
           >
-            <div class="aspect-4/3 overflow-hidden zoom-card">
+            <div class="aspect-[3/2] overflow-hidden zoom-card">
               <img
-                src="/assets/img/realizacje/wrzeszcz-gdansk/1.webp"
-                alt="Apartamenty i rezydencje"
+                src="/assets/img/realizacje/stolema-gdansk/1.webp"
+                alt="Realizacja mebli na wymiar w Gdańsku, Stolema"
+                loading="lazy"
                 class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100"
               />
             </div>
             <div
-              class="absolute inset-x-0 bottom-0 p-4 bg-linear-to-t from-black/90 via-black/50 to-transparent flex items-center justify-between"
+              class="absolute inset-x-0 bottom-0 flex items-end gap-2 sm:gap-3 bg-linear-to-t from-black/90 via-black/45 to-transparent p-2.5 sm:p-4"
             >
               <span
-                class="text-[11px] sm:text-xs uppercase tracking-wider text-white font-medium group-hover:text-brand-gold transition-colors"
-              >
-                APARTAMENTY I REZYDENCJE
+                class="w-5 sm:w-7 h-px shrink-0 bg-brand-gold mb-2"
+                aria-hidden="true"
+              ></span>
+              <span class="min-w-0">
+                <span
+                  class="block font-serif text-base sm:text-xl lg:text-2xl text-white transition-colors group-hover:text-brand-gold"
+                  >Stolema</span
+                >
+                <span
+                  class="block text-[7px] sm:text-[9px] uppercase tracking-[0.18em] sm:tracking-[0.25em] text-gray-200"
+                  >GDAŃSK</span
+                >
               </span>
-              <span class="arrow-nudge text-white text-xs">→</span>
             </div>
           </a>
 
-          <!-- Project 2 -->
+          <a
+            href="/pl/realizacje/?cat=apartamenty"
+            class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-200"
+            aria-label="Garderoba, Gdańsk Stare Miasto"
+          >
+            <div class="aspect-[3/2] overflow-hidden zoom-card">
+              <img
+                src="/assets/img/realizacje/garderoba-gdansk-stare-miasto/1.webp"
+                alt="Garderoba na wymiar w Gdańsku na Starym Mieście"
+                loading="lazy"
+                class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100"
+              />
+            </div>
+            <div
+              class="absolute inset-x-0 bottom-0 flex items-end gap-2 sm:gap-3 bg-linear-to-t from-black/90 via-black/45 to-transparent p-2.5 sm:p-4"
+            >
+              <span
+                class="w-5 sm:w-7 h-px shrink-0 bg-brand-gold mb-2"
+                aria-hidden="true"
+              ></span>
+              <span class="min-w-0">
+                <span
+                  class="block font-serif text-base sm:text-xl lg:text-2xl text-white transition-colors group-hover:text-brand-gold"
+                  >Garderoba</span
+                >
+                <span
+                  class="block text-[7px] sm:text-[9px] uppercase tracking-[0.18em] sm:tracking-[0.25em] text-gray-200"
+                  >GDAŃSK STARE MIASTO</span
+                >
+              </span>
+            </div>
+          </a>
+
+          <a
+            href="/pl/realizacje/?cat=apartamenty"
+            class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-300"
+            aria-label="Grobla, Gdańsk"
+          >
+            <div class="aspect-[3/2] overflow-hidden zoom-card">
+              <img
+                src="/assets/img/realizacje/grobla-gdansk/1.webp"
+                alt="Meble na wymiar w apartamencie przy ulicy Grobla w Gdańsku"
+                loading="lazy"
+                class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100"
+              />
+            </div>
+            <div
+              class="absolute inset-x-0 bottom-0 flex items-end gap-2 sm:gap-3 bg-linear-to-t from-black/90 via-black/45 to-transparent p-2.5 sm:p-4"
+            >
+              <span
+                class="w-5 sm:w-7 h-px shrink-0 bg-brand-gold mb-2"
+                aria-hidden="true"
+              ></span>
+              <span class="min-w-0">
+                <span
+                  class="block font-serif text-base sm:text-xl lg:text-2xl text-white transition-colors group-hover:text-brand-gold"
+                  >Grobla</span
+                >
+                <span
+                  class="block text-[7px] sm:text-[9px] uppercase tracking-[0.18em] sm:tracking-[0.25em] text-gray-200"
+                  >GDAŃSK</span
+                >
+              </span>
+            </div>
+          </a>
+
           <a
             href="/pl/realizacje/?cat=komercyjne"
-            class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-200"
+            class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-400"
+            aria-label="Barbershop, Pruszcz Gdański"
           >
-            <div class="aspect-4/3 overflow-hidden zoom-card">
+            <div class="aspect-[3/2] overflow-hidden zoom-card">
               <img
                 src="/assets/img/realizacje/barbershop-pruszcz-gdanski/1.webp"
-                alt="Wnętrza komercyjne"
+                alt="Wnętrze barbershopu w Pruszczu Gdańskim"
+                loading="lazy"
                 class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100"
               />
             </div>
             <div
-              class="absolute inset-x-0 bottom-0 p-4 bg-linear-to-t from-black/90 via-black/50 to-transparent flex items-center justify-between"
+              class="absolute inset-x-0 bottom-0 flex items-end gap-2 sm:gap-3 bg-linear-to-t from-black/90 via-black/45 to-transparent p-2.5 sm:p-4"
             >
               <span
-                class="text-[11px] sm:text-xs uppercase tracking-wider text-white font-medium group-hover:text-brand-gold transition-colors"
-              >
-                WNĘTRZA KOMERCYJNE
+                class="w-5 sm:w-7 h-px shrink-0 bg-brand-gold mb-2"
+                aria-hidden="true"
+              ></span>
+              <span class="min-w-0">
+                <span
+                  class="block font-serif text-base sm:text-xl lg:text-2xl text-white transition-colors group-hover:text-brand-gold"
+                  >Barbershop</span
+                >
+                <span
+                  class="block text-[7px] sm:text-[9px] uppercase tracking-[0.18em] sm:tracking-[0.25em] text-gray-200"
+                  >PRUSZCZ GDAŃSKI</span
+                >
               </span>
-              <span class="arrow-nudge text-white text-xs">→</span>
             </div>
           </a>
 
-          <!-- Project 3 -->
           <a
-            href="/pl/realizacje/?cat=drzwi"
-            class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-300"
+            href="/pl/realizacje/?cat=apartamenty"
+            class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-500"
+            aria-label="Bernadowska, Gdynia"
           >
-            <div class="aspect-4/3 overflow-hidden zoom-card">
+            <div class="aspect-[3/2] overflow-hidden zoom-card">
               <img
-                src="/assets/img/marine.webp"
-                alt="Drzwi i zabudowy na wymiar"
+                src="/assets/img/realizacje/bernadowska-gdynia/1.webp"
+                alt="Meble na wymiar w rezydencji przy Bernadowskiej w Gdyni"
+                loading="lazy"
                 class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100"
               />
             </div>
             <div
-              class="absolute inset-x-0 bottom-0 p-4 bg-linear-to-t from-black/90 via-black/50 to-transparent flex items-center justify-between"
+              class="absolute inset-x-0 bottom-0 flex items-end gap-2 sm:gap-3 bg-linear-to-t from-black/90 via-black/45 to-transparent p-2.5 sm:p-4"
             >
               <span
-                class="text-[11px] sm:text-xs uppercase tracking-wider text-white font-medium group-hover:text-brand-gold transition-colors"
-              >
-                BRANŻA STOCZNIOWA (NAVORA)
+                class="w-5 sm:w-7 h-px shrink-0 bg-brand-gold mb-2"
+                aria-hidden="true"
+              ></span>
+              <span class="min-w-0">
+                <span
+                  class="block font-serif text-base sm:text-xl lg:text-2xl text-white transition-colors group-hover:text-brand-gold"
+                  >Bernadowska</span
+                >
+                <span
+                  class="block text-[7px] sm:text-[9px] uppercase tracking-[0.18em] sm:tracking-[0.25em] text-gray-200"
+                  >GDYNIA</span
+                >
               </span>
-              <span class="arrow-nudge text-white text-xs">→</span>
             </div>
           </a>
+
+          <a
+            href="/pl/realizacje/?cat=apartamenty"
+            class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-600"
+            aria-label="Wrzeszcz, Gdańsk"
+          >
+            <div class="aspect-[3/2] overflow-hidden zoom-card">
+              <img
+                src="/assets/img/realizacje/wrzeszcz-gdansk/1.webp"
+                alt="Meble na wymiar w apartamencie we Wrzeszczu w Gdańsku"
+                loading="lazy"
+                class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100"
+              />
+            </div>
+            <div
+              class="absolute inset-x-0 bottom-0 flex items-end gap-2 sm:gap-3 bg-linear-to-t from-black/90 via-black/45 to-transparent p-2.5 sm:p-4"
+            >
+              <span
+                class="w-5 sm:w-7 h-px shrink-0 bg-brand-gold mb-2"
+                aria-hidden="true"
+              ></span>
+              <span class="min-w-0">
+                <span
+                  class="block font-serif text-base sm:text-xl lg:text-2xl text-white transition-colors group-hover:text-brand-gold"
+                  >Wrzeszcz</span
+                >
+                <span
+                  class="block text-[7px] sm:text-[9px] uppercase tracking-[0.18em] sm:tracking-[0.25em] text-gray-200"
+                  >GDAŃSK</span
+                >
+              </span>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="flex items-center justify-center gap-4 sm:gap-6 mt-8 sm:mt-10 reveal-item"
+        >
+          <span
+            class="hidden sm:block flex-1 max-w-36 h-px bg-brand-gold/60"
+            aria-hidden="true"
+          ></span>
+          <a
+            href="/pl/realizacje/"
+            class="group inline-flex items-center gap-3 border border-brand-gold px-5 sm:px-8 py-3 text-[10px] sm:text-xs uppercase tracking-[0.18em] sm:tracking-[0.2em] text-white hover:bg-brand-gold hover:text-brand-navy transition-colors"
+          >
+            <span>ZOBACZ WSZYSTKIE REALIZACJE</span>
+            <span
+              class="arrow-nudge text-brand-gold group-hover:text-brand-navy"
+              >→</span
+            >
+          </a>
+          <span
+            class="hidden sm:block flex-1 max-w-36 h-px bg-brand-gold/60"
+            aria-hidden="true"
+          ></span>
         </div>
       </div>
     </section>
 
-    <!-- ==================== SECTION: NASZ PROCES (Image 1) ==================== -->
     <section
       class="py-14 sm:py-24 lg:py-32 bg-white border-t border-brand-borderLight"
     >
@@ -974,7 +1149,6 @@
         <div
           class="grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-8 2xl:gap-12 items-start"
         >
-          <!-- Left: Process Heading -->
           <div class="space-y-4 reveal-item xl:col-span-3">
             <span
               class="text-[11px] uppercase tracking-[0.25em] text-gray-500 font-semibold block"
@@ -998,11 +1172,9 @@
             </div>
           </div>
 
-          <!-- Right: 4 Steps + Tag -->
           <div
             class="grid grid-cols-2 xl:col-span-9 xl:grid-cols-5 gap-8 xl:gap-5 2xl:gap-8"
           >
-            <!-- Step 01 -->
             <div
               class="min-w-0 space-y-3 border-l-2 border-brand-borderLight pl-6 reveal-item reveal-delay-100"
             >
@@ -1018,7 +1190,6 @@
               </p>
             </div>
 
-            <!-- Step 02 -->
             <div
               class="min-w-0 space-y-3 border-l-2 border-brand-borderLight pl-6 reveal-item reveal-delay-200"
             >
@@ -1034,7 +1205,6 @@
               </p>
             </div>
 
-            <!-- Step 03 -->
             <div
               class="min-w-0 space-y-3 border-l-2 border-brand-borderLight pl-6 reveal-item reveal-delay-300"
             >
@@ -1050,7 +1220,6 @@
               </p>
             </div>
 
-            <!-- Step 04 -->
             <div
               class="min-w-0 space-y-3 border-l-2 border-brand-borderLight pl-6 reveal-item reveal-delay-400"
             >
@@ -1066,7 +1235,6 @@
               </p>
             </div>
 
-            <!-- Right Tag Box -->
             <div
               class="flex flex-col justify-center border-l-2 border-brand-gold/40 pl-6 reveal-item reveal-delay-500 sm:col-span-2 xl:col-span-1"
             >
@@ -1083,7 +1251,6 @@
       </div>
     </section>
 
-    <!-- ==================== FOOTER (All Images) ==================== -->
     <footer
       class="bg-brand-navy text-white pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-10 lg:pb-12 border-t border-brand-navyLight"
     >
@@ -1091,7 +1258,6 @@
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8 lg:gap-y-10 pb-10 sm:pb-12 lg:pb-16 border-b border-white/10 items-start"
         >
-          <!-- Col 1: Logo -->
           <div class="min-w-0 space-y-2">
             <a href="/pl/" class="inline-flex flex-col items-center">
               <span
@@ -1106,7 +1272,6 @@
             </a>
           </div>
 
-          <!-- Col 2: Contact Details -->
           <div
             class="min-w-0 space-y-3 text-xs sm:text-sm text-gray-300 font-light"
           >
@@ -1174,9 +1339,7 @@
             </div>
           </div>
 
-          <!-- Col 3: Social & Button -->
           <div class="flex min-w-0 flex-wrap items-center gap-3">
-            <!-- Facebook -->
             <a
               href="https://www.facebook.com/profile.php?id=61579381396598#"
               target="_blank"
@@ -1195,7 +1358,7 @@
                 </svg>
               </span>
             </a>
-            <!-- Instagram -->
+
             <a
               href="https://www.instagram.com/krofft_wykonczenia_wnetrz/"
               target="_blank"
@@ -1231,7 +1394,7 @@
                 />
               </svg>
             </a>
-            <!-- Kontakt button -->
+
             <a
               href="/pl/kontakt/"
               class="inline-flex items-center space-x-2 px-4 py-2 border border-white/30 hover:border-brand-gold text-xs uppercase tracking-wider text-white hover:text-brand-gold transition-colors"
@@ -1241,7 +1404,6 @@
             </a>
           </div>
 
-          <!-- Col 4: Slogan -->
           <div
             class="hidden min-w-0 text-xs uppercase tracking-[0.2em] text-gray-300 font-medium lg:block lg:text-right"
           >
@@ -1249,7 +1411,6 @@
           </div>
         </div>
 
-        <!-- Bottom Credits -->
         <div
           class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 space-y-4 sm:space-y-0"
         >
@@ -1269,166 +1430,6 @@
       </div>
     </footer>
 
-    <!-- ==================== CONTACT MODAL ("Porozmawiajmy") ==================== -->
-    <dialog id="contact-dialog" class="contact-modal p-0 rounded-none">
-      <div
-        class="relative bg-brand-navyDark text-white border border-brand-gold/40 max-w-xl mx-auto p-6 sm:p-10"
-      >
-        <!-- Close button -->
-        <button
-          data-close-contact-modal
-          aria-label="Zamknij modal"
-          class="absolute top-5 right-5 text-gray-400 hover:text-white transition-colors"
-        >
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-
-        <div class="space-y-2 mb-6">
-          <span
-            class="text-[10px] tracking-[0.25em] uppercase text-brand-gold font-semibold block"
-          >
-            DARMOWA KONSULTACJA I WYCENA
-          </span>
-          <h3 class="font-serif text-2xl sm:text-3xl font-normal">
-            Porozmawiajmy o Twoim projekcie.
-          </h3>
-          <p class="text-xs text-gray-300 font-light">
-            Zostaw nam wiadomość lub dane kontaktowe – odezwiemy się w ciągu
-            24h.
-          </p>
-        </div>
-
-        <!-- Form -->
-        <form id="contact-form" class="space-y-4">
-          <div>
-            <label
-              class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-              >Imię i nazwisko</label
-            >
-            <input
-              type="text"
-              required
-              placeholder="Jan Kowalski"
-              class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-            />
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label
-                class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-                >Telefon</label
-              >
-              <input
-                type="tel"
-                required
-                placeholder="+48 000 000 000"
-                class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-              />
-            </div>
-            <div>
-              <label
-                class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-                >E-mail</label
-              >
-              <input
-                type="email"
-                required
-                placeholder="jan@example.com"
-                class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label
-              class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-              >Typ inwestycji</label
-            >
-            <select
-              class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-            >
-              <option value="apartamenty">Apartament / Rezydencja</option>
-              <option value="komercyjne">Wnętrza komercyjne / Biuro</option>
-              <option value="kliniki">Klinika / Przestrzeń medyczna</option>
-              <option value="stoczniowa">Branża stoczniowa (Marine)</option>
-              <option value="inne">Inne indywidualne zamówienie</option>
-            </select>
-          </div>
-
-          <div>
-            <label
-              class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-              >Wiadomość / Opis projektu</label
-            >
-            <textarea
-              rows="3"
-              placeholder="Opisz krótko zakres mebli, metraż lub załącz uwagi..."
-              class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-            ></textarea>
-          </div>
-
-          <div
-            class="flex items-start space-x-2 text-[11px] text-gray-400 pt-1"
-          >
-            <input
-              type="checkbox"
-              id="rodo"
-              required
-              class="mt-0.5 accent-brand-gold"
-            />
-            <label for="rodo"
-              >Wyrażam zgodę na przetwarzanie danych osobowych w celu kontaktu
-              ofertowego.</label
-            >
-          </div>
-
-          <button
-            type="submit"
-            class="w-full py-3.5 bg-brand-gold text-brand-navy font-semibold text-xs uppercase tracking-[0.2em] hover:bg-brand-goldHover transition-colors mt-2"
-          >
-            WYŚLIJ WIADOMOŚĆ →
-          </button>
-        </form>
-
-        <!-- Success Confirmation State -->
-        <div
-          id="contact-form-success"
-          class="hidden text-center py-8 space-y-4"
-        >
-          <div
-            class="w-12 h-12 rounded-full border-2 border-brand-gold text-brand-gold flex items-center justify-center mx-auto text-xl"
-          >
-            ✓
-          </div>
-          <h4 class="font-serif text-2xl">Dziękujemy za kontakt!</h4>
-          <p class="text-xs text-gray-300 max-w-sm mx-auto">
-            Twoja wiadomość została pomyślnie wysłana. Nasz zespół skontaktuje
-            się z Tobą w najszybszym możliwym terminie.
-          </p>
-          <button
-            data-close-contact-modal
-            class="inline-block mt-4 px-6 py-2 border border-white/30 text-xs uppercase tracking-wider text-white hover:border-brand-gold hover:text-brand-gold"
-          >
-            Zamknij okno
-          </button>
-        </div>
-      </div>
-    </dialog>
-
-    <!-- Scripts -->
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/cookie-consent.js"></script>
   </body>

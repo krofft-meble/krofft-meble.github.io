@@ -1,20 +1,17 @@
 <!doctype html>
 <html class="h-full" lang="nb">
   <head>
-    <!-- Main -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#0b1926" />
-    <title>Om oss | KROFFT – møbler laget med håndverk</title>
+    <title>Produsent av møbler og innredninger på mål | KROFFT</title>
 
-    <!-- Opis dla SEO -->
     <meta
       name="description"
       content="Bli kjent med KROFFT: 15 års erfaring med møbler på mål og komplett innredning for boliger, næringslokaler og maritim sektor."
     />
 
-    <!-- Linki do zasobów -->
     <link rel="preload" href="/assets/css/main.css" as="style" />
     <link rel="stylesheet" href="/assets/css/main.css" />
     <script>
@@ -30,7 +27,6 @@
       loadFontsCSS("/assets/css/fonts.css");
     </script>
 
-    <!-- Open Graph (fb, Discord, Messenger, LinkedIn itp.) -->
     <meta
       property="og:title"
       content="Om oss | KROFFT – møbler laget med håndverk"
@@ -46,7 +42,6 @@
       content="https://krofft.pl/assets/img/realizacje/starowiejska/1.webp"
     />
 
-    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -61,15 +56,17 @@
       content="https://krofft.pl/assets/img/realizacje/starowiejska/1.webp"
     />
 
-    <!-- SEO -->
     <link rel="canonical" href="https://krofft.pl/no/o-nas/" />
     <link rel="alternate" hreflang="pl" href="https://krofft.pl/pl/o-nas/" />
     <link rel="alternate" hreflang="en" href="https://krofft.pl/en/o-nas/" />
     <link rel="alternate" hreflang="de" href="https://krofft.pl/de/o-nas/" />
     <link rel="alternate" hreflang="nb" href="https://krofft.pl/no/o-nas/" />
-    <link rel="alternate" hreflang="x-default" href="https://krofft.pl/en/o-nas/" />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://krofft.pl/en/o-nas/"
+    />
 
-    <!-- Struktura danych - JSON-LD -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -101,14 +98,12 @@
   <body
     class="bg-white text-gray-900 font-sans antialiased selection:bg-brand-gold selection:text-brand-navy"
   >
-    <!-- ==================== HEADER ==================== -->
     <header
       class="fixed top-0 left-0 w-full z-50 header-glass transition-all duration-300"
     >
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between gap-4"
       >
-        <!-- Logo -->
         <a href="/no/" class="flex shrink-0 flex-col items-center group">
           <span
             class="navbar-logo block w-32 sm:w-48"
@@ -117,13 +112,19 @@
           ></span>
           <span
             class="whitespace-nowrap text-[9px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.3em] text-gray-300 uppercase font-sans -mt-1 group-hover:text-white transition-colors"
-          >— MØBLER PÅ MÅL —</span>
+            >— MØBLER PÅ MÅL —</span
+          >
         </a>
 
-        <!-- Desktop Navigation -->
         <nav
           class="hidden xl:flex items-center space-x-5 2xl:space-x-8 text-[11px] tracking-[0.12em] uppercase font-medium"
         >
+          <a
+            href="/no/wspolpraca-b2b/"
+            class="nav-link text-gray-300 hover:text-white transition-colors"
+            >B2B</a
+          >
+
           <a
             href="/no/o-nas/"
             class="nav-link text-brand-gold border-b border-brand-gold pb-1 transition-colors"
@@ -156,7 +157,6 @@
           >
         </nav>
 
-        <!-- Right Actions: Language & CTA -->
         <div class="hidden xl:flex items-center space-x-4 2xl:space-x-6">
           <div class="relative">
             <button
@@ -170,24 +170,52 @@
                 />
               </svg>
             </button>
-            <div id="lang-menu" aria-label="Velg språk" class="hidden absolute right-0 mt-2 w-28 bg-brand-navyDark border border-brand-gold/30 shadow-xl py-1 rounded-sm text-[12px] text-gray-300">
-<a href="/pl/o-nas/" lang="pl" aria-label="polski" class="block px-3 py-1 hover:bg-brand-navy hover:text-white">PL</a>
-<a href="/en/o-nas/" lang="en" aria-label="English" class="block px-3 py-1 hover:bg-brand-navy hover:text-white">EN</a>
-<a href="/de/o-nas/" lang="de" aria-label="Deutsch" class="block px-3 py-1 hover:bg-brand-navy hover:text-white">DE</a>
-<a href="/no/o-nas/" lang="nb" aria-label="norsk bokmål" aria-current="page" class="block px-3 py-1 hover:bg-brand-navy hover:text-white text-brand-gold">NO</a>
+            <div
+              id="lang-menu"
+              aria-label="Velg språk"
+              class="hidden absolute right-0 mt-2 w-28 bg-brand-navyDark border border-brand-gold/30 shadow-xl py-1 rounded-sm text-[12px] text-gray-300"
+            >
+              <a
+                href="/pl/o-nas/"
+                lang="pl"
+                aria-label="polski"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white"
+                >PL</a
+              >
+              <a
+                href="/en/o-nas/"
+                lang="en"
+                aria-label="English"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white"
+                >EN</a
+              >
+              <a
+                href="/de/o-nas/"
+                lang="de"
+                aria-label="Deutsch"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white"
+                >DE</a
+              >
+              <a
+                href="/no/o-nas/"
+                lang="nb"
+                aria-label="norsk bokmål"
+                aria-current="page"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white text-brand-gold"
+                >NO</a
+              >
             </div>
           </div>
 
-          <button
-            data-open-contact-modal
+          <a
+            href="/no/kontakt/"
             class="group inline-flex items-center space-x-3 px-5 py-2.5 bg-brand-navy/80 hover:bg-brand-navy text-white text-[12px] tracking-[0.14em] uppercase font-medium border border-white/20 hover:border-brand-gold transition-all duration-300"
           >
             <span>LA OSS SNAKKE</span>
             <span class="arrow-nudge text-brand-gold font-bold">→</span>
-          </button>
+          </a>
         </div>
 
-        <!-- Mobile Menu Button -->
         <button
           id="mobile-menu-toggle"
           aria-label="Åpne menyen"
@@ -208,7 +236,6 @@
       </div>
     </header>
 
-    <!-- Mobile Drawer Menu -->
     <div
       id="mobile-menu"
       class="mobile-menu closed fixed inset-0 z-40 bg-brand-navyDark/98 backdrop-blur-2xl flex flex-col justify-between p-6 pt-28 xl:hidden"
@@ -216,9 +243,13 @@
       <nav
         class="flex flex-col space-y-6 text-lg sm:text-xl font-serif tracking-wider text-white"
       >
-        <a href="/no/" class="hover:text-brand-gold transition-colors"
-          >HJEM</a
+        <a
+          href="/no/wspolpraca-b2b/"
+          class="hover:text-brand-gold transition-colors"
+          >B2B-samarbeid</a
         >
+
+        <a href="/no/" class="hover:text-brand-gold transition-colors">HJEM</a>
         <a href="/no/o-nas/" class="text-brand-gold">OM OSS</a>
         <a
           href="/no/realizacje/"
@@ -239,10 +270,42 @@
         >
       </nav>
 
-      <div class="border-t border-white/10 pt-4 pb-4"><p class="mb-2 text-xs uppercase tracking-widest text-gray-400">Språk</p><div class="flex flex-wrap gap-3 text-sm text-gray-300"><a href="/pl/o-nas/" lang="pl" aria-label="polski" class="px-2 py-1 hover:text-brand-gold">PL</a>
-<a href="/en/o-nas/" lang="en" aria-label="English" class="px-2 py-1 hover:text-brand-gold">EN</a>
-<a href="/de/o-nas/" lang="de" aria-label="Deutsch" class="px-2 py-1 hover:text-brand-gold">DE</a>
-<a href="/no/o-nas/" lang="nb" aria-label="norsk bokmål" aria-current="page" class="px-2 py-1 hover:text-brand-gold text-brand-gold">NO</a></div></div>
+      <div class="border-t border-white/10 pt-4 pb-4">
+        <p class="mb-2 text-xs uppercase tracking-widest text-gray-400">
+          Språk
+        </p>
+        <div class="flex flex-wrap gap-3 text-sm text-gray-300">
+          <a
+            href="/pl/o-nas/"
+            lang="pl"
+            aria-label="polski"
+            class="px-2 py-1 hover:text-brand-gold"
+            >PL</a
+          >
+          <a
+            href="/en/o-nas/"
+            lang="en"
+            aria-label="English"
+            class="px-2 py-1 hover:text-brand-gold"
+            >EN</a
+          >
+          <a
+            href="/de/o-nas/"
+            lang="de"
+            aria-label="Deutsch"
+            class="px-2 py-1 hover:text-brand-gold"
+            >DE</a
+          >
+          <a
+            href="/no/o-nas/"
+            lang="nb"
+            aria-label="norsk bokmål"
+            aria-current="page"
+            class="px-2 py-1 hover:text-brand-gold text-brand-gold"
+            >NO</a
+          >
+        </div>
+      </div>
 
       <div class="border-t border-white/10 pt-6 space-y-4">
         <div
@@ -255,22 +318,21 @@
             >biuro@krofft.pl</a
           >
         </div>
-        <button
-          data-open-contact-modal
+        <a
+          href="/no/kontakt/"
           class="w-full py-3.5 bg-brand-gold text-brand-navy font-medium text-xs uppercase tracking-widest text-center hover:bg-brand-goldHover transition-colors"
-        >LA OSS SNAKKE OM PROSJEKTET DITT →</button>
+          >LA OSS SNAKKE OM PROSJEKTET DITT →</a
+        >
       </div>
     </div>
 
-    <!-- ==================== HERO SECTION (Image 2) ==================== -->
     <section
       class="relative min-h-[60vh] bg-brand-dark text-white flex items-center pt-24 sm:pt-20 overflow-hidden"
     >
-      <!-- Background Image -->
       <div class="absolute inset-0">
         <img
-          src="/assets/img/pracownia/4.webp"
-          alt="KROFFT møbelhåndverk"
+          src="/assets/img/realizacje/letnica-gdansk/1.webp"
+          alt="KROFFTs møbelhåndverk"
           class="w-full h-full object-cover object-center filter brightness-[0.72]"
         />
         <div
@@ -281,7 +343,6 @@
         ></div>
       </div>
 
-      <!-- Main Content -->
       <div
         class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 lg:py-24"
       >
@@ -289,7 +350,8 @@
           <div
             class="items-center space-x-4 text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold"
           >
-            <b class="pr-2">/</b>OM OSS</div>
+            <b class="pr-2">/</b>OM OSS
+          </div>
 
           <div class="flex flex-row">
             <div class="pr-4 min-h-full hidden md:flex flex-col space-y-2">
@@ -307,13 +369,17 @@
               KROFFT.<br />
               <p
                 class="text-2xl sm:text-5xl md:text-6xl 3xl:text-7xl portrait:sm:text-4xl portrait:md:text-5xl"
-              >Håndverk som skaper<br />rom å leve i.</p>
+              >
+                Håndverk som skaper<br />rom å leve i.
+              </p>
             </h1>
           </div>
 
           <p
             class="font-serif text-lg sm:text-xl 3xl:text-2xl text-gray-200 font-light pl-5"
-          >Møbler på mål. Uten kompromisser.</p>
+          >
+            Møbler på mål. Uten kompromisser.
+          </p>
 
           <div class="pt-4 pl-5">
             <a
@@ -328,13 +394,11 @@
       </div>
     </section>
 
-    <!-- ==================== SECTION: KIM JESTEŚMY (Image 2) ==================== -->
     <section class="py-14 sm:py-24 lg:py-32 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center"
         >
-          <!-- Left Column: Story -->
           <div class="lg:col-span-6 space-y-6 reveal-item">
             <div
               class="flex items-center space-x-2 text-[11px] uppercase tracking-[0.25em] text-gray-500 font-semibold"
@@ -345,14 +409,32 @@
 
             <h2
               class="font-serif text-3xl sm:text-5xl font-normal text-gray-900 leading-[1.15]"
-            >Erfaring<br />som gir kvalitet.</h2>
+            >
+              Erfaring<br />som gir kvalitet.
+            </h2>
 
             <div
               class="space-y-4 text-xs sm:text-sm text-gray-700 leading-relaxed font-light"
             >
-              <p>KROFFT spesialiserer seg på komplett produksjon av møbler, innredninger og interiørelementer på mål. I 15 år har vi kombinert tradisjonelt håndverk med moderne teknologi, presisjon og omtanke for hver detalj.</p>
-              <p>Vi skaper interiører for leiligheter og residens­er, kommersielle lokaler, klinikker og helseinstitusjoner, tjenestesteder, offentlige bygg og maritim sektor. Vi gjennomfører både individuelle prosjekter og store kontraktsoppdrag.</p>
-              <p>Målet vårt er å levere holdbare, estetiske og funksjonelle løsninger tilpasset hver kunde. Vi sørger for en helhetlig prosess fra dokumentasjon og produksjonsforberedelser til utførelse og ferdig montering.</p>
+              <p>
+                KROFFT spesialiserer seg på komplett produksjon av møbler,
+                innredninger og interiørelementer på mål. I 15 år har vi
+                kombinert tradisjonelt håndverk med moderne teknologi, presisjon
+                og omtanke for hver detalj.
+              </p>
+              <p>
+                Vi skaper interiører for leiligheter og residens­er,
+                kommersielle lokaler, klinikker og helseinstitusjoner,
+                tjenestesteder, offentlige bygg og maritim sektor. Vi
+                gjennomfører både individuelle prosjekter og store
+                kontraktsoppdrag.
+              </p>
+              <p>
+                Målet vårt er å levere holdbare, estetiske og funksjonelle
+                løsninger tilpasset hver kunde. Vi sørger for en helhetlig
+                prosess fra dokumentasjon og produksjonsforberedelser til
+                utførelse og ferdig montering.
+              </p>
             </div>
 
             <div class="pt-4">
@@ -366,14 +448,13 @@
             </div>
           </div>
 
-          <!-- Right Column: Craftsman Photo -->
           <div class="lg:col-span-6 reveal-item reveal-delay-200">
             <div
               class="relative overflow-hidden bg-brand-charcoal shadow-xl border border-brand-borderLight zoom-card"
             >
               <img
-                src="/assets/img/pracownia/2.webp"
-                alt="Snekkerimaskin som bearbeider tre"
+                src="/assets/img/robocze/740343469_199922168291480979379_2273470199112317328_n.webp"
+                alt="Maskin som bearbeider tre i snekkerverkstedet"
                 class="aspect-5/3 md:aspect-4/3 lg:aspect-auto w-full h-auto object-cover"
               />
             </div>
@@ -382,12 +463,10 @@
       </div>
     </section>
 
-    <!-- ==================== SECTION: NASZA SPECJALIZACJA (Image 2) ==================== -->
     <section
       class="py-14 sm:py-24 lg:py-32 bg-brand-cream border-t border-brand-borderLight"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Section Title -->
         <div class="max-w-2xl mb-16 reveal-item">
           <div
             class="flex items-center space-x-2 text-[11px] uppercase tracking-[0.25em] text-gray-500 font-semibold mb-3"
@@ -397,17 +476,16 @@
           </div>
           <h2
             class="font-serif text-3xl sm:text-5xl font-normal text-gray-900 leading-[1.15]"
-          >Komplett innredning av interiør.</h2>
+          >
+            Komplett innredning av interiør.
+          </h2>
         </div>
 
-        <!-- 6 Specialization Boxes with Icons & Borders -->
         <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6">
-          <!-- Item 1 -->
           <div
             class="bg-white p-6 border border-brand-borderLight card-border-glow flex flex-col justify-between reveal-item reveal-delay-100"
           >
             <div class="space-y-4">
-              <!-- House Icon -->
               <div class="w-10 h-10 text-gray-800">
                 <svg
                   class="w-8 h-8 stroke-current stroke-1"
@@ -421,17 +499,19 @@
               </div>
               <h3
                 class="font-serif text-base font-medium text-gray-900 leading-tight"
-              >Leiligheter<br />og residens­er</h3>
-              <p class="text-xs text-gray-600 font-light leading-relaxed">Skreddersydde interiører med særpreg.</p>
+              >
+                Leiligheter<br />og residens­er
+              </h3>
+              <p class="text-xs text-gray-600 font-light leading-relaxed">
+                Skreddersydde interiører med særpreg.
+              </p>
             </div>
           </div>
 
-          <!-- Item 2 -->
           <div
             class="bg-white p-6 border border-brand-borderLight card-border-glow flex flex-col justify-between reveal-item reveal-delay-200"
           >
             <div class="space-y-4">
-              <!-- Commercial Building Icon -->
               <div class="w-10 h-10 text-gray-800">
                 <svg
                   class="w-8 h-8 stroke-current stroke-1"
@@ -445,17 +525,20 @@
               </div>
               <h3
                 class="font-serif text-base font-medium text-gray-900 leading-tight"
-              >Kommersielt<br />interiør</h3>
-              <p class="text-xs text-gray-600 font-light leading-relaxed">Kontorer, restauranter, hoteller, tjenestesteder og offentlige lokaler.</p>
+              >
+                Kommersielt<br />interiør
+              </h3>
+              <p class="text-xs text-gray-600 font-light leading-relaxed">
+                Kontorer, restauranter, hoteller, tjenestesteder og offentlige
+                lokaler.
+              </p>
             </div>
           </div>
 
-          <!-- Item 3 -->
           <div
             class="bg-white p-6 border border-brand-borderLight card-border-glow flex flex-col justify-between reveal-item reveal-delay-300"
           >
             <div class="space-y-4">
-              <!-- Medical Cross Badge Icon -->
               <div class="w-10 h-10 text-gray-800">
                 <svg
                   class="w-8 h-8 stroke-current stroke-1"
@@ -468,17 +551,19 @@
               </div>
               <h3
                 class="font-serif text-base font-medium text-gray-900 leading-tight"
-              >Klinikker og<br />medisinske rom</h3>
-              <p class="text-xs text-gray-600 font-light leading-relaxed">Funksjonelle og hygieniske løsninger av høyeste standard.</p>
+              >
+                Klinikker og<br />medisinske rom
+              </h3>
+              <p class="text-xs text-gray-600 font-light leading-relaxed">
+                Funksjonelle og hygieniske løsninger av høyeste standard.
+              </p>
             </div>
           </div>
 
-          <!-- Item 4 -->
           <div
             class="bg-white p-6 border border-brand-borderLight card-border-glow flex flex-col justify-between reveal-item reveal-delay-400"
           >
             <div class="space-y-4">
-              <!-- Sailboat Icon -->
               <div class="w-10 h-10 text-gray-800">
                 <svg
                   class="w-8 h-8 stroke-current stroke-1"
@@ -490,17 +575,19 @@
               </div>
               <h3
                 class="font-serif text-base font-medium text-gray-900 leading-tight"
-              >Maritim<br />bransje</h3>
-              <p class="text-xs text-gray-600 font-light leading-relaxed">Møbler og innredning til yachter og skip.</p>
+              >
+                Maritim<br />bransje
+              </h3>
+              <p class="text-xs text-gray-600 font-light leading-relaxed">
+                Møbler og innredning til yachter og skip.
+              </p>
             </div>
           </div>
 
-          <!-- Item 5 -->
           <div
             class="bg-white p-6 border border-brand-borderLight card-border-glow flex flex-col justify-between reveal-item reveal-delay-500"
           >
             <div class="space-y-4">
-              <!-- Layers Icon -->
               <div class="w-10 h-10 text-gray-800">
                 <svg
                   class="w-8 h-8 stroke-current stroke-1"
@@ -514,17 +601,20 @@
               </div>
               <h3
                 class="font-serif text-base font-medium text-gray-900 leading-tight"
-              >Interiør<br />detaljer</h3>
-              <p class="text-xs text-gray-600 font-light leading-relaxed">Benkeplater i stein, kvartssintret stein, Corian®, glass, stål og speil.</p>
+              >
+                Interiør<br />detaljer
+              </h3>
+              <p class="text-xs text-gray-600 font-light leading-relaxed">
+                Benkeplater i stein, kvartssintret stein, Corian®, glass, stål
+                og speil.
+              </p>
             </div>
           </div>
 
-          <!-- Item 6 -->
           <div
             class="bg-white p-6 border border-brand-borderLight card-border-glow flex flex-col justify-between reveal-item reveal-delay-600"
           >
             <div class="space-y-4">
-              <!-- Armchair Icon -->
               <div class="w-10 h-10 text-gray-800">
                 <svg
                   class="w-8 h-8 stroke-current stroke-1"
@@ -538,21 +628,23 @@
               </div>
               <h3
                 class="font-serif text-base font-medium text-gray-900 leading-tight"
-              >Møbler<br />og møbeltapetsering</h3>
-              <p class="text-xs text-gray-600 font-light leading-relaxed">Nye prosjekter</p>
+              >
+                Møbler<br />og møbeltapetsering
+              </h3>
+              <p class="text-xs text-gray-600 font-light leading-relaxed">
+                Nye prosjekter
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== SECTION: NASZE WARTOŚCI (Image 2) ==================== -->
     <section
       class="py-12 sm:py-20 lg:py-28 bg-brand-charcoal text-white relative border-y border-white/10"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          <!-- Left: Values Title -->
           <div class="lg:col-span-5 space-y-3 reveal-item">
             <div
               class="flex items-center space-x-2 text-[11px] uppercase tracking-[0.25em] text-brand-gold font-semibold"
@@ -562,18 +654,17 @@
             </div>
             <h2
               class="font-serif text-3xl sm:text-5xl font-normal leading-[1.15]"
-            >Mer enn møbler.<br />Det handler om mennesker, kvalitet og tillit.</h2>
+            >
+              Mer enn møbler.<br />Det handler om mennesker, kvalitet og tillit.
+            </h2>
           </div>
 
-          <!-- Right: 4 Value Pillars -->
           <div
             class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center reveal-item reveal-delay-200"
           >
-            <!-- Pillar 1 -->
             <div
               class="space-y-3 p-4 border-l border-white/10 flex flex-col items-center"
             >
-              <!-- Diamond Icon -->
               <div class="w-8 h-8 text-brand-gold">
                 <svg
                   class="w-7 h-7 stroke-current stroke-1"
@@ -585,14 +676,14 @@
               </div>
               <h3
                 class="text-xs uppercase tracking-wider text-gray-200 font-medium"
-              >Håndverk<br />og presisjon</h3>
+              >
+                Håndverk<br />og presisjon
+              </h3>
             </div>
 
-            <!-- Pillar 2 -->
             <div
               class="space-y-3 p-4 border-l border-white/10 flex flex-col items-center"
             >
-              <!-- Gear Icon -->
               <div class="w-8 h-8 text-brand-gold">
                 <svg
                   class="w-7 h-7 stroke-current stroke-1"
@@ -607,14 +698,14 @@
               </div>
               <h3
                 class="text-xs uppercase tracking-wider text-gray-200 font-medium"
-              >Moderne<br />teknologier</h3>
+              >
+                Moderne<br />teknologier
+              </h3>
             </div>
 
-            <!-- Pillar 3 -->
             <div
               class="space-y-3 p-4 border-l border-white/10 flex flex-col items-center"
             >
-              <!-- Team Icon -->
               <div class="w-8 h-8 text-brand-gold">
                 <svg
                   class="w-7 h-7 stroke-current stroke-1"
@@ -628,14 +719,14 @@
               </div>
               <h3
                 class="text-xs uppercase tracking-wider text-gray-200 font-medium"
-              >Erfarent<br />team</h3>
+              >
+                Erfarent<br />team
+              </h3>
             </div>
 
-            <!-- Pillar 4 -->
             <div
               class="space-y-3 p-4 border-l border-white/10 flex flex-col items-center"
             >
-              <!-- Leaf Icon -->
               <div class="w-8 h-8 text-brand-gold">
                 <svg
                   class="w-7 h-7 stroke-current stroke-1"
@@ -649,20 +740,20 @@
               </div>
               <h3
                 class="text-xs uppercase tracking-wider text-gray-200 font-medium"
-              >Ansvarlig<br />tilnærming</h3>
+              >
+                Ansvarlig<br />tilnærming
+              </h3>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== SECTION: MATERIAŁY (Image 2) ==================== -->
     <section class="py-14 sm:py-24 lg:py-32 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center"
         >
-          <!-- Left: Image Composition -->
           <div class="lg:col-span-6 reveal-item">
             <div
               class="relative overflow-hidden bg-brand-charcoal border border-brand-borderLight zoom-card"
@@ -675,7 +766,6 @@
             </div>
           </div>
 
-          <!-- Right: Text & CTA -->
           <div class="lg:col-span-6 space-y-6 reveal-item reveal-delay-200">
             <div
               class="flex items-center space-x-2 text-[11px] uppercase tracking-[0.25em] text-gray-500 font-semibold mb-3"
@@ -686,11 +776,18 @@
 
             <h2
               class="font-serif text-3xl sm:text-5xl font-normal text-gray-900 leading-[1.15]"
-            >Skjønnhet som varer.</h2>
+            >
+              Skjønnhet som varer.
+            </h2>
 
             <p
               class="text-xs sm:text-sm text-gray-700 leading-relaxed font-light"
-            >Vi bruker velprøvde materialer for å skape interiører som holder seg vakre og funksjonelle i mange år. Tre, finér, sintret stein, naturstein, Corian®, stål, glass og tekstiler av høy kvalitet velges med omtanke for estetikk, holdbarhet og komfort.</p>
+            >
+              Vi bruker velprøvde materialer for å skape interiører som holder
+              seg vakre og funksjonelle i mange år. Tre, finér, sintret stein,
+              naturstein, Corian®, stål, glass og tekstiler av høy kvalitet
+              velges med omtanke for estetikk, holdbarhet og komfort.
+            </p>
 
             <div class="pt-4">
               <a
@@ -706,7 +803,6 @@
       </div>
     </section>
 
-    <!-- ==================== FOOTER ==================== -->
     <footer
       class="bg-brand-navy text-white pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-10 lg:pb-12 border-t border-brand-navyLight"
     >
@@ -722,7 +818,8 @@
               >
               <span
                 class="whitespace-nowrap text-[10px] tracking-[0.3em] text-gray-300 uppercase font-sans"
-              >— MØBLER PÅ MÅL —</span>
+                >— MØBLER PÅ MÅL —</span
+              >
             </a>
           </div>
 
@@ -881,143 +978,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- ==================== CONTACT MODAL ==================== -->
-    <dialog id="contact-dialog" class="contact-modal p-0 rounded-none">
-      <div
-        class="relative bg-brand-navyDark text-white border border-brand-gold/40 max-w-xl mx-auto p-6 sm:p-10 shadow-2xl"
-      >
-        <button
-          data-close-contact-modal
-          aria-label="Lukk dialogboksen"
-          class="absolute top-5 right-5 text-gray-400 hover:text-white transition-colors"
-        >
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-
-        <div class="space-y-2 mb-6">
-          <span
-            class="text-[10px] tracking-[0.25em] uppercase text-brand-gold font-semibold block"
-            >GRATIS KONSULTASJON OG PRISTILBUD</span
-          >
-          <h3 class="font-serif text-2xl sm:text-3xl font-normal">La oss snakke om prosjektet ditt.</h3>
-          <p class="text-xs text-gray-300 font-light">Send oss en melding eller kontaktinformasjon, så tar vi kontakt innen 24 timer.</p>
-        </div>
-
-        <form id="contact-form" class="space-y-4">
-          <div>
-            <label
-              class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-              >Fullt navn</label
-            >
-            <input
-              type="text"
-              required
-              placeholder="Ola Nordmann"
-              class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-            />
-          </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label
-                class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-                >Telefon</label
-              >
-              <input
-                type="tel"
-                required
-                placeholder="+48 000 000 000"
-                class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-              />
-            </div>
-            <div>
-              <label
-                class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-                >E-post</label
-              >
-              <input
-                type="email"
-                required
-                placeholder="ola@example.com"
-                class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-              />
-            </div>
-          </div>
-          <div>
-            <label
-              class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-              >Prosjekttype</label
-            >
-            <select
-              class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-            >
-              <option value="apartamenty">Leilighet / Residens</option>
-              <option value="komercyjne">Kommersielt interiør / Kontor</option>
-              <option value="kliniki">Klinikk / Medisinsk lokale</option>
-              <option value="stoczniowa">Maritim bransje</option>
-              <option value="inne">Annet skreddersydd oppdrag</option>
-            </select>
-          </div>
-          <div>
-            <label
-              class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-              >Melding / Prosjektbeskrivelse</label
-            >
-            <textarea
-              rows="3"
-              placeholder="Beskriv kort møblene, størrelsen på rommet eller eventuelle merknader ..."
-              class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-            ></textarea>
-          </div>
-          <div
-            class="flex items-start space-x-2 text-[11px] text-gray-400 pt-1"
-          >
-            <input
-              type="checkbox"
-              id="rodo"
-              required
-              class="mt-0.5 accent-brand-gold"
-            />
-            <label for="rodo"
-              >Jeg samtykker til behandling av personopplysningene mine slik at dere kan kontakte meg om et tilbud.</label
-            >
-          </div>
-          <button
-            type="submit"
-            class="w-full py-3.5 bg-brand-gold text-brand-navy font-semibold text-xs uppercase tracking-[0.2em] hover:bg-brand-goldHover transition-colors mt-2"
-          >SEND MELDING →</button>
-        </form>
-
-        <div
-          id="contact-form-success"
-          class="hidden text-center py-8 space-y-4"
-        >
-          <div
-            class="w-12 h-12 rounded-full border-2 border-brand-gold text-brand-gold flex items-center justify-center mx-auto text-xl"
-          >
-            ✓
-          </div>
-          <h4 class="font-serif text-2xl">Takk for at du tok kontakt!</h4>
-          <p class="text-xs text-gray-300 max-w-sm mx-auto">Meldingen er sendt. Vi tar kontakt så snart som mulig.</p>
-          <button
-            data-close-contact-modal
-            class="inline-block mt-4 px-6 py-2 border border-white/30 text-xs uppercase tracking-wider text-white hover:border-brand-gold hover:text-brand-gold"
-          >Lukk vinduet</button>
-        </div>
-      </div>
-    </dialog>
 
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/cookie-consent.js"></script>

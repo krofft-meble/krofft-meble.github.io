@@ -1,20 +1,17 @@
 <!doctype html>
 <html class="h-full" lang="nb">
   <head>
-    <!-- Main -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#0b1926" />
-    <title>Møbler på mål og interiør | KROFFT</title>
+    <title>Møbler på mål og kontraktsinnredning | KROFFT</title>
 
-    <!-- Opis dla SEO -->
     <meta
       name="description"
       content="Møbler på mål og komplett innredning, laget med omtanke i Gdańsk. Individuelle prosjekter, kvalitetsmaterialer og over 15 års erfaring."
     />
 
-    <!-- Linki do zasobów -->
     <link rel="stylesheet" href="/assets/css/main.css" />
     <script>
       function loadFontsCSS(href) {
@@ -29,11 +26,7 @@
       loadFontsCSS("/assets/css/fonts.css");
     </script>
 
-    <!-- Open Graph (fb, Discord, Messenger, LinkedIn itp.) -->
-    <meta
-      property="og:title"
-      content="Møbler på mål og interiør | KROFFT"
-    />
+    <meta property="og:title" content="Møbler på mål og interiør | KROFFT" />
     <meta
       property="og:description"
       content="Møbler på mål og komplett innredning, laget med omtanke i Gdańsk. Individuelle prosjekter, kvalitetsmaterialer og over 15 års erfaring."
@@ -45,12 +38,8 @@
       content="https://krofft.pl/assets/img/realizacje/starowiejska/1.webp"
     />
 
-    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Møbler på mål og interiør | KROFFT"
-    />
+    <meta name="twitter:title" content="Møbler på mål og interiør | KROFFT" />
     <meta
       name="twitter:description"
       content="Møbler på mål og komplett innredning, laget med omtanke i Gdańsk. Individuelle prosjekter, kvalitetsmaterialer og over 15 års erfaring."
@@ -60,7 +49,6 @@
       content="https://krofft.pl/assets/img/realizacje/starowiejska/1.webp"
     />
 
-    <!-- Favicony -->
     <link
       rel="icon"
       type="image/png"
@@ -77,7 +65,6 @@
     <meta name="apple-mobile-web-app-title" content="KROFFT" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 
-    <!-- SEO -->
     <link rel="canonical" href="https://krofft.pl/no/" />
     <link rel="alternate" hreflang="pl" href="https://krofft.pl/pl/" />
     <link rel="alternate" hreflang="en" href="https://krofft.pl/en/" />
@@ -85,7 +72,6 @@
     <link rel="alternate" hreflang="nb" href="https://krofft.pl/no/" />
     <link rel="alternate" hreflang="x-default" href="https://krofft.pl/en/" />
 
-    <!-- Struktura danych - JSON-LD -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -117,14 +103,12 @@
   <body
     class="home-page bg-white text-gray-900 antialiased selection:bg-brand-gold selection:text-brand-navy"
   >
-    <!-- ==================== HEADER ==================== -->
     <header
       class="fixed top-0 left-0 w-full z-50 header-glass transition-all duration-300"
     >
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between gap-4"
       >
-        <!-- Logo -->
         <a href="/no/" class="flex shrink-0 flex-col items-center group">
           <span
             class="navbar-logo block w-32 sm:w-48"
@@ -133,13 +117,19 @@
           ></span>
           <span
             class="whitespace-nowrap text-[9px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.3em] text-gray-300 uppercase font-sans -mt-1 group-hover:text-white transition-colors"
-          >— MØBLER PÅ MÅL —</span>
+            >— MØBLER PÅ MÅL —</span
+          >
         </a>
 
-        <!-- Desktop Navigation -->
         <nav
           class="hidden xl:flex items-center space-x-5 2xl:space-x-8 text-[11px] tracking-[0.12em] uppercase font-medium"
         >
+          <a
+            href="/no/wspolpraca-b2b/"
+            class="nav-link text-gray-300 hover:text-white transition-colors"
+            >B2B</a
+          >
+
           <a
             href="/no/o-nas/"
             class="nav-link text-gray-300 hover:text-white transition-colors"
@@ -172,9 +162,7 @@
           >
         </nav>
 
-        <!-- Right Actions: Language & CTA -->
         <div class="hidden xl:flex items-center space-x-4 2xl:space-x-6">
-          <!-- Language dropdown -->
           <div class="relative">
             <button
               id="lang-toggle"
@@ -187,25 +175,52 @@
                 />
               </svg>
             </button>
-            <div id="lang-menu" aria-label="Velg språk" class="hidden absolute right-0 mt-2 w-28 bg-brand-navyDark border border-brand-gold/30 shadow-xl py-1 rounded-sm text-[12px] text-gray-300">
-<a href="/pl/" lang="pl" aria-label="polski" class="block px-3 py-1 hover:bg-brand-navy hover:text-white">PL</a>
-<a href="/en/" lang="en" aria-label="English" class="block px-3 py-1 hover:bg-brand-navy hover:text-white">EN</a>
-<a href="/de/" lang="de" aria-label="Deutsch" class="block px-3 py-1 hover:bg-brand-navy hover:text-white">DE</a>
-<a href="/no/" lang="nb" aria-label="norsk bokmål" aria-current="page" class="block px-3 py-1 hover:bg-brand-navy hover:text-white text-brand-gold">NO</a>
+            <div
+              id="lang-menu"
+              aria-label="Velg språk"
+              class="hidden absolute right-0 mt-2 w-28 bg-brand-navyDark border border-brand-gold/30 shadow-xl py-1 rounded-sm text-[12px] text-gray-300"
+            >
+              <a
+                href="/pl/"
+                lang="pl"
+                aria-label="polski"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white"
+                >PL</a
+              >
+              <a
+                href="/en/"
+                lang="en"
+                aria-label="English"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white"
+                >EN</a
+              >
+              <a
+                href="/de/"
+                lang="de"
+                aria-label="Deutsch"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white"
+                >DE</a
+              >
+              <a
+                href="/no/"
+                lang="nb"
+                aria-label="norsk bokmål"
+                aria-current="page"
+                class="block px-3 py-1 hover:bg-brand-navy hover:text-white text-brand-gold"
+                >NO</a
+              >
             </div>
           </div>
 
-          <!-- CTA Button -->
-          <button
-            data-open-contact-modal
+          <a
+            href="/no/kontakt/"
             class="group inline-flex items-center space-x-2 px-3 py-2 2xl:space-x-3 2xl:px-5 2xl:py-2.5 bg-brand-navy/80 hover:bg-brand-navy text-white text-[11px] tracking-[0.12em] uppercase font-medium border border-white/20 hover:border-brand-gold transition-all duration-300"
           >
             <span>LA OSS SNAKKE</span>
             <span class="arrow-nudge text-brand-gold font-bold">→</span>
-          </button>
+          </a>
         </div>
 
-        <!-- Mobile Menu Button -->
         <button
           id="mobile-menu-toggle"
           aria-label="Åpne menyen"
@@ -226,7 +241,6 @@
       </div>
     </header>
 
-    <!-- Mobile Drawer Menu -->
     <div
       id="mobile-menu"
       class="mobile-menu closed fixed inset-0 z-40 bg-brand-navyDark/98 backdrop-blur-2xl flex flex-col justify-between p-6 pt-28 xl:hidden"
@@ -234,6 +248,12 @@
       <nav
         class="flex flex-col space-y-6 text-lg sm:text-xl font-serif tracking-wider text-white"
       >
+        <a
+          href="/no/wspolpraca-b2b/"
+          class="hover:text-brand-gold transition-colors"
+          >B2B-samarbeid</a
+        >
+
         <a href="/no/" class="text-brand-gold">HJEM</a>
         <a href="/no/o-nas/" class="hover:text-brand-gold transition-colors"
           >OM OSS</a
@@ -257,10 +277,42 @@
         >
       </nav>
 
-      <div class="border-t border-white/10 pt-4 pb-4"><p class="mb-2 text-xs uppercase tracking-widest text-gray-400">Språk</p><div class="flex flex-wrap gap-3 text-sm text-gray-300"><a href="/pl/" lang="pl" aria-label="polski" class="px-2 py-1 hover:text-brand-gold">PL</a>
-<a href="/en/" lang="en" aria-label="English" class="px-2 py-1 hover:text-brand-gold">EN</a>
-<a href="/de/" lang="de" aria-label="Deutsch" class="px-2 py-1 hover:text-brand-gold">DE</a>
-<a href="/no/" lang="nb" aria-label="norsk bokmål" aria-current="page" class="px-2 py-1 hover:text-brand-gold text-brand-gold">NO</a></div></div>
+      <div class="border-t border-white/10 pt-4 pb-4">
+        <p class="mb-2 text-xs uppercase tracking-widest text-gray-400">
+          Språk
+        </p>
+        <div class="flex flex-wrap gap-3 text-sm text-gray-300">
+          <a
+            href="/pl/"
+            lang="pl"
+            aria-label="polski"
+            class="px-2 py-1 hover:text-brand-gold"
+            >PL</a
+          >
+          <a
+            href="/en/"
+            lang="en"
+            aria-label="English"
+            class="px-2 py-1 hover:text-brand-gold"
+            >EN</a
+          >
+          <a
+            href="/de/"
+            lang="de"
+            aria-label="Deutsch"
+            class="px-2 py-1 hover:text-brand-gold"
+            >DE</a
+          >
+          <a
+            href="/no/"
+            lang="nb"
+            aria-label="norsk bokmål"
+            aria-current="page"
+            class="px-2 py-1 hover:text-brand-gold text-brand-gold"
+            >NO</a
+          >
+        </div>
+      </div>
 
       <div class="border-t border-white/10 pt-6 space-y-4">
         <div
@@ -273,19 +325,18 @@
             >biuro@krofft.pl</a
           >
         </div>
-        <button
-          data-open-contact-modal
+        <a
+          href="/no/kontakt/"
           class="w-full py-3.5 bg-brand-gold text-brand-navy font-medium text-xs uppercase tracking-widest text-center hover:bg-brand-goldHover transition-colors"
-        >LA OSS SNAKKE OM PROSJEKTET DITT →</button>
+          >LA OSS SNAKKE OM PROSJEKTET DITT →</a
+        >
       </div>
     </div>
 
-    <!-- ==================== HERO SECTION ==================== -->
     <section
       id="hero-slider"
       class="relative min-h-screen bg-brand-dark text-white flex items-center pt-24 sm:pt-20 overflow-hidden"
     >
-      <!-- Background Slides with Placeholders -->
       <div class="absolute inset-0">
         <div
           class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out"
@@ -379,22 +430,24 @@
         </div>
       </div>
 
-      <!-- Main Content Container -->
       <div
         class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 lg:py-20"
       >
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <!-- Left: Headline & CTA -->
           <div
             class="lg:col-span-8 space-y-6 sm:space-y-8 reveal-item revealed"
           >
             <div class="space-y-2 sm:space-y-3">
               <h1
                 class="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl 3xl:text-8xl portrait:sm:text-4xl portrait:md:text-5xl portrait:lg:text-6xl font-normal leading-[1.08] tracking-tight text-shadow-lg/30"
-              >Mer<br />enn interiør.</h1>
+              >
+                Mer<br />enn interiør.
+              </h1>
               <p
                 class="font-serif text-2xl md:text-3xl 3xl:text-4xl text-gray-200 font-light leading-snug text-shadow-lg/30"
-              >Rom skapt<br />for å vare.</p>
+              >
+                Rom skapt<br />for å vare.
+              </p>
             </div>
 
             <div class="pt-4">
@@ -407,7 +460,6 @@
               </a>
             </div>
 
-            <!-- Bottom Left: Carousel Number & Controls -->
             <div
               class="pt-12 sm:pt-20 flex items-center space-x-6 text-sm tracking-widest text-gray-300"
             >
@@ -437,7 +489,6 @@
             </div>
           </div>
 
-          <!-- Right: Vertical Category Menu & NAVORA Card -->
           <div
             class="lg:col-span-4 hidden lg:flex flex-col space-y-4 reveal-item revealed reveal-delay-200"
           >
@@ -445,22 +496,25 @@
               <a
                 href="/no/realizacje/?cat=apartamenty"
                 class="block text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-brand-gold transition-colors py-1 border-r-2 border-gray-300 hover:border-brand-gold pr-2 text-shadow-lg/30"
-              >LEILIGHETER<br />OG RESIDENSER</a>
+                >LEILIGHETER<br />OG RESIDENSER</a
+              >
               <a
                 href="/no/realizacje/?cat=komercyjne"
                 class="block text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-brand-gold transition-colors py-1 border-r-2 border-gray-300 hover:border-brand-gold pr-2 text-shadow-lg/30"
-              >INTERIØRER<br />KOMMERSIELT</a>
+                >INTERIØRER<br />KOMMERSIELT</a
+              >
               <a
                 href="/no/realizacje/?cat=medyczne"
                 class="block text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-brand-gold transition-colors py-1 border-r-2 border-gray-300 hover:border-brand-gold pr-2 text-shadow-lg/30"
-              >KLINIKKER OG<br />MEDISINSKE ROM</a>
+                >KLINIKKER OG<br />MEDISINSKE ROM</a
+              >
               <a
                 href="/no/realizacje/?cat=publiczne"
                 class="block text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-brand-gold transition-colors py-1 border-r-2 border-gray-300 hover:border-brand-gold pr-2 text-shadow-lg/30"
-              >LOKALER FOR TJENESTER<br />OG OFFENTLIGE BYGG</a>
+                >LOKALER FOR TJENESTER<br />OG OFFENTLIGE BYGG</a
+              >
             </div>
 
-            <!-- Marine Navora Card -->
             <div class="mt-8 pt-4">
               <a
                 href="/no/realizacje/?cat=stoczniowa"
@@ -478,8 +532,11 @@
                 <div class="relative z-10 space-y-2">
                   <span
                     class="text-[10px] tracking-[0.25em] uppercase text-gray-400 font-semibold block"
-                  >MARITIM BRANSJE</span>
-                  <p class="text-xs text-gray-300 font-light">Maritime prosjekter</p>
+                    >MARITIM BRANSJE</span
+                  >
+                  <p class="text-xs text-gray-300 font-light">
+                    Maritime prosjekter
+                  </p>
                   <div
                     class="pt-4 flex items-center justify-between border-t border-white/10"
                   >
@@ -506,28 +563,28 @@
       </div>
     </section>
 
-    <!-- ==================== SECTION: MATERIAŁY ==================== -->
     <section
       class="py-14 sm:py-20 bg-brand-cream border-t border-brand-borderLight"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-5 lg:px-6">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          <!-- Left Title & Link -->
           <div class="lg:col-span-3 reveal-item">
             <div
               class="text-3xl sm:text-4xl xl:text-5xl text-gray-900 leading-[1.1]"
-            >Materialer.<br />
+            >
+              Materialer.<br />
               <p class="text-xl sm:text-2xl">Uten kompromisser.</p>
-              <p class="text-sm sm:text-base pt-3 font-extralight">Vi bruker velprøvde, anerkjente og sertifiserte materialer, valgt for hvert prosjekt ut fra bruk og ønsket uttrykk.</p>
+              <p class="text-sm sm:text-base pt-3 font-extralight">
+                Vi bruker velprøvde, anerkjente og sertifiserte materialer,
+                valgt for hvert prosjekt ut fra bruk og ønsket uttrykk.
+              </p>
             </div>
           </div>
 
-          <!-- Right: 8 Swatches -->
           <div class="lg:col-span-9">
             <div
               class="materials-grid grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 sm:gap-5"
             >
-              <!-- Swatch 1 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -541,12 +598,15 @@
                 <div class="mt-3">
                   <h3
                     class="text-xs font-bold uppercase tracking-wider text-gray-900"
-                  >TRE OG FINÉR</h3>
-                  <p class="text-[11px] text-gray-600 mt-0.5">Tidløst uttrykk</p>
+                  >
+                    TRE OG FINÉR
+                  </h3>
+                  <p class="text-[11px] text-gray-600 mt-0.5">
+                    Tidløst uttrykk
+                  </p>
                 </div>
               </div>
 
-              <!-- Swatch 2 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -560,12 +620,15 @@
                 <div class="mt-3">
                   <h3
                     class="text-xs font-bold uppercase tracking-wider text-gray-900"
-                  >LAMINATPLATER</h3>
-                  <p class="text-[11px] text-gray-600 mt-0.5">Funksjonalitet og variasjon</p>
+                  >
+                    LAMINATPLATER
+                  </h3>
+                  <p class="text-[11px] text-gray-600 mt-0.5">
+                    Funksjonalitet og variasjon
+                  </p>
                 </div>
               </div>
 
-              <!-- Swatch 3 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -579,12 +642,15 @@
                 <div class="mt-3">
                   <h3
                     class="text-xs font-bold uppercase tracking-wider text-gray-900"
-                  >STEIN OG KOMPOSITTER</h3>
-                  <p class="text-[11px] text-gray-600 mt-0.5">Naturlig skjønnhet</p>
+                  >
+                    STEIN OG KOMPOSITTER
+                  </h3>
+                  <p class="text-[11px] text-gray-600 mt-0.5">
+                    Naturlig skjønnhet
+                  </p>
                 </div>
               </div>
 
-              <!-- Swatch 4 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -598,12 +664,15 @@
                 <div class="mt-3">
                   <h3
                     class="text-xs font-bold uppercase tracking-wider text-gray-900"
-                  >SINTRET STEIN</h3>
-                  <p class="text-[11px] text-gray-600 mt-0.5">Eksepsjonell slitestyrke</p>
+                  >
+                    SINTRET STEIN
+                  </h3>
+                  <p class="text-[11px] text-gray-600 mt-0.5">
+                    Eksepsjonell slitestyrke
+                  </p>
                 </div>
               </div>
 
-              <!-- Swatch 5 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -617,12 +686,15 @@
                 <div class="mt-3">
                   <h3
                     class="text-xs font-bold uppercase tracking-wider text-gray-900"
-                  >CORIAN®</h3>
-                  <p class="text-[11px] text-gray-600 mt-0.5">Hygiene og moderne design</p>
+                  >
+                    CORIAN®
+                  </h3>
+                  <p class="text-[11px] text-gray-600 mt-0.5">
+                    Hygiene og moderne design
+                  </p>
                 </div>
               </div>
 
-              <!-- Swatch 6 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -636,12 +708,15 @@
                 <div class="mt-3">
                   <h3
                     class="text-xs font-bold uppercase tracking-wider text-gray-900"
-                  >STÅL, GLASS OG METALL</h3>
-                  <p class="text-[11px] text-gray-600 mt-0.5">Moderne detaljer</p>
+                  >
+                    STÅL, GLASS OG METALL
+                  </h3>
+                  <p class="text-[11px] text-gray-600 mt-0.5">
+                    Moderne detaljer
+                  </p>
                 </div>
               </div>
 
-              <!-- Swatch 7 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -655,12 +730,15 @@
                 <div class="mt-3">
                   <h3
                     class="text-xs font-bold uppercase tracking-wider text-gray-900"
-                  >SPEIL</h3>
-                  <p class="text-[11px] text-gray-600 mt-0.5">Eleganse og funksjonalitet</p>
+                  >
+                    SPEIL
+                  </h3>
+                  <p class="text-[11px] text-gray-600 mt-0.5">
+                    Eleganse og funksjonalitet
+                  </p>
                 </div>
               </div>
 
-              <!-- Swatch 8 -->
               <div class="group reveal-item cursor-pointer">
                 <div
                   class="aspect-4/3 sm:aspect-square bg-gray-200 overflow-hidden border border-brand-borderLight group-hover:border-brand-gold transition-colors"
@@ -674,8 +752,12 @@
                 <div class="mt-3">
                   <h3
                     class="text-xs font-bold uppercase tracking-wider text-gray-900"
-                  >TEKSTILER OG STOPPING</h3>
-                  <p class="text-[11px] text-gray-600 mt-0.5">Komfort og personlig stil</p>
+                  >
+                    TEKSTILER OG STOPPING
+                  </h3>
+                  <p class="text-[11px] text-gray-600 mt-0.5">
+                    Komfort og personlig stil
+                  </p>
                 </div>
               </div>
             </div>
@@ -684,7 +766,6 @@
       </div>
     </section>
 
-    <!-- ==================== SECTION: WŁASNA PRODUKCJA ==================== -->
     <section
       id="produkcja"
       class="py-16 sm:py-20 bg-brand-charcoal text-white relative"
@@ -694,13 +775,20 @@
           <div class="lg:col-span-4 space-y-5 reveal-item">
             <span
               class="text-[11px] uppercase tracking-[0.25em] text-brand-gold font-semibold block"
-            >EGEN PRODUKSJON</span>
+              >EGEN PRODUKSJON</span
+            >
             <h2
               class="font-serif text-3xl sm:text-4xl xl:text-5xl font-normal leading-[1.1]"
-            >Møbler og innredninger<br />laget på mål.</h2>
+            >
+              Møbler og innredninger<br />laget på mål.
+            </h2>
             <p
               class="text-gray-300 text-sm font-light max-w-sm leading-relaxed"
-            >Vi kombinerer håndverk, moderne maskiner og et erfarent team av snekkere, møbeltapetserere og montører. Vi tar hånd om hele prosessen fra tekniske tegninger til montering hos kunden.</p>
+            >
+              Vi kombinerer håndverk, moderne maskiner og et erfarent team av
+              snekkere, møbeltapetserere og montører. Vi tar hånd om hele
+              prosessen fra tekniske tegninger til montering hos kunden.
+            </p>
             <div>
               <a
                 href="/no/o-nas/"
@@ -712,11 +800,9 @@
             </div>
           </div>
 
-          <!-- 3 Production Cards -->
           <div
             class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5 h-full"
           >
-            <!-- Card 1: Stolarnia -->
             <div
               class="group relative overflow-hidden bg-brand-dark border border-white/10 card-border-glow reveal-item reveal-delay-100"
             >
@@ -732,12 +818,15 @@
               >
                 <h3
                   class="font-serif text-lg sm:text-xl font-normal tracking-wide text-white group-hover:text-brand-gold transition-colors"
-                >SNEKKERVERKSTED</h3>
-                <p class="text-xs text-gray-200 font-light leading-relaxed">Presis bearbeiding og jevne resultater.</p>
+                >
+                  SNEKKERVERKSTED
+                </h3>
+                <p class="text-xs text-gray-200 font-light leading-relaxed">
+                  Presis bearbeiding og jevne resultater.
+                </p>
               </div>
             </div>
 
-            <!-- Card 2: Tapicernia -->
             <div
               class="group relative overflow-hidden bg-brand-dark border border-white/10 card-border-glow reveal-item reveal-delay-200"
             >
@@ -753,12 +842,15 @@
               >
                 <h3
                   class="font-serif text-lg sm:text-xl font-normal tracking-wide text-white group-hover:text-brand-gold transition-colors"
-                >MØBELTAPETSERING</h3>
-                <p class="text-xs text-gray-200 font-light leading-relaxed">Skreddersydde løsninger og høy komfort.</p>
+                >
+                  MØBELTAPETSERING
+                </h3>
+                <p class="text-xs text-gray-200 font-light leading-relaxed">
+                  Skreddersydde løsninger og høy komfort.
+                </p>
               </div>
             </div>
 
-            <!-- Card 3: Montaż -->
             <div
               class="group relative overflow-hidden bg-brand-dark border border-white/10 card-border-glow reveal-item reveal-delay-300"
             >
@@ -774,8 +866,12 @@
               >
                 <h3
                   class="font-serif text-lg sm:text-xl font-normal tracking-wide text-white group-hover:text-brand-gold transition-colors"
-                >MONTERING</h3>
-                <p class="text-xs text-gray-200 font-light leading-relaxed">Perfekt utførelse i hver detalj.</p>
+                >
+                  MONTERING
+                </h3>
+                <p class="text-xs text-gray-200 font-light leading-relaxed">
+                  Perfekt utførelse i hver detalj.
+                </p>
               </div>
             </div>
           </div>
@@ -783,99 +879,250 @@
       </div>
     </section>
 
-    <!-- ==================== SECTION: WYBRANE REALIZACJE (Image 1) ==================== -->
-    <section
-      class="py-14 sm:py-24 lg:py-32 bg-brand-cream border-t border-brand-borderLight"
-    >
+    <section class="py-1 sm:py-14 lg:py-20 bg-brand-navy">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Section Header -->
-        <div
-          class="flex items-center justify-between mb-12 sm:mb-16 reveal-item"
-        >
-          <span
-            class="text-xs uppercase tracking-[0.25em] text-gray-600 font-semibold"
-          >UTVALGTE PROSJEKTER</span>
-          <a
-            href="/no/realizacje/"
-            class="group inline-flex items-center space-x-2 text-xs uppercase tracking-[0.2em] font-semibold text-gray-900 hover:text-brand-gold transition-colors"
+        <div class="text-center mb-8 sm:mb-10 reveal-item">
+          <h2
+            class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal text-white"
           >
-            <span>SE ALLE</span>
-            <span class="arrow-nudge">→</span>
-          </a>
+            Utvalgte prosjekter
+          </h2>
+          <p
+            class="mt-4 text-[9px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.25em] text-gray-300"
+          >
+            PRESIS UTFØRELSE
+            <span class="mx-2 sm:mx-4 text-brand-gold">|</span>
+            MODERNE TEKNOLOGI
+            <span class="mx-2 sm:mx-4 text-brand-gold">|</span>
+            TIDLØST DESIGN
+          </p>
         </div>
 
-        <!-- 3 Showcase Project Cards -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Project 1 -->
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-6">
           <a
             href="/no/realizacje/?cat=apartamenty"
             class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-100"
+            aria-label="Stolema, Gdańsk"
           >
-            <div class="aspect-4/3 overflow-hidden zoom-card">
+            <div class="aspect-[3/2] overflow-hidden zoom-card">
               <img
-                src="/assets/img/realizacje/wrzeszcz-gdansk/1.webp"
-                alt="Apartamenty i rezydencje"
+                src="/assets/img/realizacje/stolema-gdansk/1.webp"
+                alt="Møbler på mål i Gdańsk, Stolema"
+                loading="lazy"
                 class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100"
               />
             </div>
             <div
-              class="absolute inset-x-0 bottom-0 p-4 bg-linear-to-t from-black/90 via-black/50 to-transparent flex items-center justify-between"
+              class="absolute inset-x-0 bottom-0 flex items-end gap-2 sm:gap-3 bg-linear-to-t from-black/90 via-black/45 to-transparent p-2.5 sm:p-4"
             >
               <span
-                class="text-[11px] sm:text-xs uppercase tracking-wider text-white font-medium group-hover:text-brand-gold transition-colors"
-              >LEILIGHETER OG RESIDENSER</span>
-              <span class="arrow-nudge text-white text-xs">→</span>
+                class="w-5 sm:w-7 h-px shrink-0 bg-brand-gold mb-2"
+                aria-hidden="true"
+              ></span>
+              <span class="min-w-0">
+                <span
+                  class="block font-serif text-base sm:text-xl lg:text-2xl text-white transition-colors group-hover:text-brand-gold"
+                  >Stolema</span
+                >
+                <span
+                  class="block text-[7px] sm:text-[9px] uppercase tracking-[0.18em] sm:tracking-[0.25em] text-gray-200"
+                  >GDAŃSK</span
+                >
+              </span>
             </div>
           </a>
 
-          <!-- Project 2 -->
+          <a
+            href="/no/realizacje/?cat=apartamenty"
+            class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-200"
+            aria-label="Garderobe, Gdańsk Stare Miasto"
+          >
+            <div class="aspect-[3/2] overflow-hidden zoom-card">
+              <img
+                src="/assets/img/realizacje/garderoba-gdansk-stare-miasto/1.webp"
+                alt="Garderobe na wymiar w Gdańsku na Starym Mieście"
+                loading="lazy"
+                class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100"
+              />
+            </div>
+            <div
+              class="absolute inset-x-0 bottom-0 flex items-end gap-2 sm:gap-3 bg-linear-to-t from-black/90 via-black/45 to-transparent p-2.5 sm:p-4"
+            >
+              <span
+                class="w-5 sm:w-7 h-px shrink-0 bg-brand-gold mb-2"
+                aria-hidden="true"
+              ></span>
+              <span class="min-w-0">
+                <span
+                  class="block font-serif text-base sm:text-xl lg:text-2xl text-white transition-colors group-hover:text-brand-gold"
+                  >Garderobe</span
+                >
+                <span
+                  class="block text-[7px] sm:text-[9px] uppercase tracking-[0.18em] sm:tracking-[0.25em] text-gray-200"
+                  >GDAŃSK GAMLEBY</span
+                >
+              </span>
+            </div>
+          </a>
+
+          <a
+            href="/no/realizacje/?cat=apartamenty"
+            class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-300"
+            aria-label="Grobla, Gdańsk"
+          >
+            <div class="aspect-[3/2] overflow-hidden zoom-card">
+              <img
+                src="/assets/img/realizacje/grobla-gdansk/1.webp"
+                alt="Møbler på mål i en leilighet ved Grobla i Gdańsk"
+                loading="lazy"
+                class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100"
+              />
+            </div>
+            <div
+              class="absolute inset-x-0 bottom-0 flex items-end gap-2 sm:gap-3 bg-linear-to-t from-black/90 via-black/45 to-transparent p-2.5 sm:p-4"
+            >
+              <span
+                class="w-5 sm:w-7 h-px shrink-0 bg-brand-gold mb-2"
+                aria-hidden="true"
+              ></span>
+              <span class="min-w-0">
+                <span
+                  class="block font-serif text-base sm:text-xl lg:text-2xl text-white transition-colors group-hover:text-brand-gold"
+                  >Grobla</span
+                >
+                <span
+                  class="block text-[7px] sm:text-[9px] uppercase tracking-[0.18em] sm:tracking-[0.25em] text-gray-200"
+                  >GDAŃSK</span
+                >
+              </span>
+            </div>
+          </a>
+
           <a
             href="/no/realizacje/?cat=komercyjne"
-            class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-200"
+            class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-400"
+            aria-label="Barbershop, Pruszcz Gdański"
           >
-            <div class="aspect-4/3 overflow-hidden zoom-card">
+            <div class="aspect-[3/2] overflow-hidden zoom-card">
               <img
                 src="/assets/img/realizacje/barbershop-pruszcz-gdanski/1.webp"
-                alt="Kommersielt interiør"
+                alt="Innredning til barbershop i Pruszcz Gdański"
+                loading="lazy"
                 class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100"
               />
             </div>
             <div
-              class="absolute inset-x-0 bottom-0 p-4 bg-linear-to-t from-black/90 via-black/50 to-transparent flex items-center justify-between"
+              class="absolute inset-x-0 bottom-0 flex items-end gap-2 sm:gap-3 bg-linear-to-t from-black/90 via-black/45 to-transparent p-2.5 sm:p-4"
             >
               <span
-                class="text-[11px] sm:text-xs uppercase tracking-wider text-white font-medium group-hover:text-brand-gold transition-colors"
-              >KOMMERSIELT INTERIØR</span>
-              <span class="arrow-nudge text-white text-xs">→</span>
+                class="w-5 sm:w-7 h-px shrink-0 bg-brand-gold mb-2"
+                aria-hidden="true"
+              ></span>
+              <span class="min-w-0">
+                <span
+                  class="block font-serif text-base sm:text-xl lg:text-2xl text-white transition-colors group-hover:text-brand-gold"
+                  >Barbershop</span
+                >
+                <span
+                  class="block text-[7px] sm:text-[9px] uppercase tracking-[0.18em] sm:tracking-[0.25em] text-gray-200"
+                  >PRUSZCZ GDAŃSKI</span
+                >
+              </span>
             </div>
           </a>
 
-          <!-- Project 3 -->
           <a
-            href="/no/realizacje/?cat=drzwi"
-            class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-300"
+            href="/no/realizacje/?cat=apartamenty"
+            class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-500"
+            aria-label="Bernadowska, Gdynia"
           >
-            <div class="aspect-4/3 overflow-hidden zoom-card">
+            <div class="aspect-[3/2] overflow-hidden zoom-card">
               <img
-                src="/assets/img/marine.webp"
-                alt="Drzwi i zabudowy na wymiar"
+                src="/assets/img/realizacje/bernadowska-gdynia/1.webp"
+                alt="Møbler på mål i en bolig ved Bernadowska i Gdynia"
+                loading="lazy"
                 class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100"
               />
             </div>
             <div
-              class="absolute inset-x-0 bottom-0 p-4 bg-linear-to-t from-black/90 via-black/50 to-transparent flex items-center justify-between"
+              class="absolute inset-x-0 bottom-0 flex items-end gap-2 sm:gap-3 bg-linear-to-t from-black/90 via-black/45 to-transparent p-2.5 sm:p-4"
             >
               <span
-                class="text-[11px] sm:text-xs uppercase tracking-wider text-white font-medium group-hover:text-brand-gold transition-colors"
-              >MARITIM BRANSJE (NAVORA)</span>
-              <span class="arrow-nudge text-white text-xs">→</span>
+                class="w-5 sm:w-7 h-px shrink-0 bg-brand-gold mb-2"
+                aria-hidden="true"
+              ></span>
+              <span class="min-w-0">
+                <span
+                  class="block font-serif text-base sm:text-xl lg:text-2xl text-white transition-colors group-hover:text-brand-gold"
+                  >Bernadowska</span
+                >
+                <span
+                  class="block text-[7px] sm:text-[9px] uppercase tracking-[0.18em] sm:tracking-[0.25em] text-gray-200"
+                  >GDYNIA</span
+                >
+              </span>
             </div>
           </a>
+
+          <a
+            href="/no/realizacje/?cat=apartamenty"
+            class="group relative block overflow-hidden bg-black card-border-glow reveal-item reveal-delay-600"
+            aria-label="Wrzeszcz, Gdańsk"
+          >
+            <div class="aspect-[3/2] overflow-hidden zoom-card">
+              <img
+                src="/assets/img/realizacje/wrzeszcz-gdansk/1.webp"
+                alt="Møbler på mål i en leilighet i Wrzeszcz, Gdańsk"
+                loading="lazy"
+                class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100"
+              />
+            </div>
+            <div
+              class="absolute inset-x-0 bottom-0 flex items-end gap-2 sm:gap-3 bg-linear-to-t from-black/90 via-black/45 to-transparent p-2.5 sm:p-4"
+            >
+              <span
+                class="w-5 sm:w-7 h-px shrink-0 bg-brand-gold mb-2"
+                aria-hidden="true"
+              ></span>
+              <span class="min-w-0">
+                <span
+                  class="block font-serif text-base sm:text-xl lg:text-2xl text-white transition-colors group-hover:text-brand-gold"
+                  >Wrzeszcz</span
+                >
+                <span
+                  class="block text-[7px] sm:text-[9px] uppercase tracking-[0.18em] sm:tracking-[0.25em] text-gray-200"
+                  >GDAŃSK</span
+                >
+              </span>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="flex items-center justify-center gap-4 sm:gap-6 mt-8 sm:mt-10 reveal-item"
+        >
+          <span
+            class="hidden sm:block flex-1 max-w-36 h-px bg-brand-gold/60"
+            aria-hidden="true"
+          ></span>
+          <a
+            href="/no/realizacje/"
+            class="group inline-flex items-center gap-3 border border-brand-gold px-5 sm:px-8 py-3 text-[10px] sm:text-xs uppercase tracking-[0.18em] sm:tracking-[0.2em] text-white hover:bg-brand-gold hover:text-brand-navy transition-colors"
+          >
+            <span>SE ALLE PROSJEKTER</span>
+            <span
+              class="arrow-nudge text-brand-gold group-hover:text-brand-navy"
+              >→</span
+            >
+          </a>
+          <span
+            class="hidden sm:block flex-1 max-w-36 h-px bg-brand-gold/60"
+            aria-hidden="true"
+          ></span>
         </div>
       </div>
     </section>
 
-    <!-- ==================== SECTION: NASZ PROCES (Image 1) ==================== -->
     <section
       class="py-14 sm:py-24 lg:py-32 bg-white border-t border-brand-borderLight"
     >
@@ -883,14 +1130,16 @@
         <div
           class="grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-8 2xl:gap-12 items-start"
         >
-          <!-- Left: Process Heading -->
           <div class="space-y-4 reveal-item xl:col-span-3">
             <span
               class="text-[11px] uppercase tracking-[0.25em] text-gray-500 font-semibold block"
-            >PROSESSEN VÅR</span>
+              >PROSESSEN VÅR</span
+            >
             <h2
               class="font-serif text-2xl sm:text-4xl xl:text-4xl 2xl:text-5xl font-normal text-gray-900 leading-[1.1]"
-            >Fra idé<br />til ferdig resultat.</h2>
+            >
+              Fra idé<br />til ferdig resultat.
+            </h2>
             <div class="pt-4">
               <a
                 href="/no/proces/"
@@ -902,11 +1151,9 @@
             </div>
           </div>
 
-          <!-- Right: 4 Steps + Tag -->
           <div
             class="grid grid-cols-2 xl:col-span-9 xl:grid-cols-5 gap-8 xl:gap-5 2xl:gap-8"
           >
-            <!-- Step 01 -->
             <div
               class="min-w-0 space-y-3 border-l-2 border-brand-borderLight pl-6 reveal-item reveal-delay-100"
             >
@@ -914,11 +1161,14 @@
                 class="font-serif text-4xl sm:text-5xl text-gray-800 font-normal block"
                 >01</span
               >
-              <h3 class="font-serif text-lg font-medium text-gray-900">Konsultasjon</h3>
-              <p class="text-xs text-gray-600 font-light leading-relaxed">Vi setter oss inn i behovene dine og gir råd.</p>
+              <h3 class="font-serif text-lg font-medium text-gray-900">
+                Konsultasjon
+              </h3>
+              <p class="text-xs text-gray-600 font-light leading-relaxed">
+                Vi setter oss inn i behovene dine og gir råd.
+              </p>
             </div>
 
-            <!-- Step 02 -->
             <div
               class="min-w-0 space-y-3 border-l-2 border-brand-borderLight pl-6 reveal-item reveal-delay-200"
             >
@@ -926,11 +1176,14 @@
                 class="font-serif text-4xl sm:text-5xl text-gray-800 font-normal block"
                 >02</span
               >
-              <h3 class="font-serif text-lg font-medium text-gray-900">Design og dokumentasjon</h3>
-              <p class="text-xs text-gray-600 font-light leading-relaxed">Vi utvikler løsninger tilpasset deg.</p>
+              <h3 class="font-serif text-lg font-medium text-gray-900">
+                Design og dokumentasjon
+              </h3>
+              <p class="text-xs text-gray-600 font-light leading-relaxed">
+                Vi utvikler løsninger tilpasset deg.
+              </p>
             </div>
 
-            <!-- Step 03 -->
             <div
               class="min-w-0 space-y-3 border-l-2 border-brand-borderLight pl-6 reveal-item reveal-delay-300"
             >
@@ -938,11 +1191,14 @@
                 class="font-serif text-4xl sm:text-5xl text-gray-800 font-normal block"
                 >03</span
               >
-              <h3 class="font-serif text-lg font-medium text-gray-900">Produksjon</h3>
-              <p class="text-xs text-gray-600 font-light leading-relaxed">Egne produksjonslokaler og kvalitetskontroll.</p>
+              <h3 class="font-serif text-lg font-medium text-gray-900">
+                Produksjon
+              </h3>
+              <p class="text-xs text-gray-600 font-light leading-relaxed">
+                Egne produksjonslokaler og kvalitetskontroll.
+              </p>
             </div>
 
-            <!-- Step 04 -->
             <div
               class="min-w-0 space-y-3 border-l-2 border-brand-borderLight pl-6 reveal-item reveal-delay-400"
             >
@@ -950,24 +1206,27 @@
                 class="font-serif text-4xl sm:text-5xl text-gray-800 font-normal block"
                 >04</span
               >
-              <h3 class="font-serif text-lg font-medium text-gray-900">Montering</h3>
-              <p class="text-xs text-gray-600 font-light leading-relaxed">Vi finpusser hver eneste detalj.</p>
+              <h3 class="font-serif text-lg font-medium text-gray-900">
+                Montering
+              </h3>
+              <p class="text-xs text-gray-600 font-light leading-relaxed">
+                Vi finpusser hver eneste detalj.
+              </p>
             </div>
 
-            <!-- Right Tag Box -->
             <div
               class="flex flex-col justify-center border-l-2 border-brand-gold/40 pl-6 reveal-item reveal-delay-500 sm:col-span-2 xl:col-span-1"
             >
               <span
                 class="text-[10px] uppercase tracking-[0.16em] text-gray-500 font-semibold leading-relaxed"
-              >HELE VEIEN.<br />I HVER<br />FASE.</span>
+                >HELE VEIEN.<br />I HVER<br />FASE.</span
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== FOOTER (All Images) ==================== -->
     <footer
       class="bg-brand-navy text-white pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-10 lg:pb-12 border-t border-brand-navyLight"
     >
@@ -975,7 +1234,6 @@
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8 lg:gap-y-10 pb-10 sm:pb-12 lg:pb-16 border-b border-white/10 items-start"
         >
-          <!-- Col 1: Logo -->
           <div class="min-w-0 space-y-2">
             <a href="/no/" class="inline-flex flex-col items-center">
               <span
@@ -984,11 +1242,11 @@
               >
               <span
                 class="whitespace-nowrap text-[10px] tracking-[0.3em] text-gray-300 uppercase font-sans"
-              >— MØBLER PÅ MÅL —</span>
+                >— MØBLER PÅ MÅL —</span
+              >
             </a>
           </div>
 
-          <!-- Col 2: Contact Details -->
           <div
             class="min-w-0 space-y-3 text-xs sm:text-sm text-gray-300 font-light"
           >
@@ -1056,9 +1314,7 @@
             </div>
           </div>
 
-          <!-- Col 3: Social & Button -->
           <div class="flex min-w-0 flex-wrap items-center gap-3">
-            <!-- Facebook -->
             <a
               href="https://www.facebook.com/profile.php?id=61579381396598#"
               target="_blank"
@@ -1077,7 +1333,7 @@
                 </svg>
               </span>
             </a>
-            <!-- Instagram -->
+
             <a
               href="https://www.instagram.com/krofft_wykonczenia_wnetrz/"
               target="_blank"
@@ -1113,7 +1369,7 @@
                 />
               </svg>
             </a>
-            <!-- Kontakt button -->
+
             <a
               href="/no/kontakt/"
               class="inline-flex items-center space-x-2 px-4 py-2 border border-white/30 hover:border-brand-gold text-xs uppercase tracking-wider text-white hover:text-brand-gold transition-colors"
@@ -1123,7 +1379,6 @@
             </a>
           </div>
 
-          <!-- Col 4: Slogan -->
           <div
             class="hidden min-w-0 text-xs uppercase tracking-[0.2em] text-gray-300 font-medium lg:block lg:text-right"
           >
@@ -1131,7 +1386,6 @@
           </div>
         </div>
 
-        <!-- Bottom Credits -->
         <div
           class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 space-y-4 sm:space-y-0"
         >
@@ -1151,151 +1405,6 @@
       </div>
     </footer>
 
-    <!-- ==================== CONTACT MODAL ("Porozmawiajmy") ==================== -->
-    <dialog id="contact-dialog" class="contact-modal p-0 rounded-none">
-      <div
-        class="relative bg-brand-navyDark text-white border border-brand-gold/40 max-w-xl mx-auto p-6 sm:p-10"
-      >
-        <!-- Close button -->
-        <button
-          data-close-contact-modal
-          aria-label="Lukk dialogboksen"
-          class="absolute top-5 right-5 text-gray-400 hover:text-white transition-colors"
-        >
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-
-        <div class="space-y-2 mb-6">
-          <span
-            class="text-[10px] tracking-[0.25em] uppercase text-brand-gold font-semibold block"
-          >GRATIS KONSULTASJON OG PRISTILBUD</span>
-          <h3 class="font-serif text-2xl sm:text-3xl font-normal">La oss snakke om prosjektet ditt.</h3>
-          <p class="text-xs text-gray-300 font-light">Send oss en melding eller kontaktinformasjon, så tar vi kontakt innen 24 timer.</p>
-        </div>
-
-        <!-- Form -->
-        <form id="contact-form" class="space-y-4">
-          <div>
-            <label
-              class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-              >Fullt navn</label
-            >
-            <input
-              type="text"
-              required
-              placeholder="Ola Nordmann"
-              class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-            />
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label
-                class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-                >Telefon</label
-              >
-              <input
-                type="tel"
-                required
-                placeholder="+48 000 000 000"
-                class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-              />
-            </div>
-            <div>
-              <label
-                class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-                >E-post</label
-              >
-              <input
-                type="email"
-                required
-                placeholder="ola@example.com"
-                class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label
-              class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-              >Prosjekttype</label
-            >
-            <select
-              class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-            >
-              <option value="apartamenty">Leilighet / Residens</option>
-              <option value="komercyjne">Kommersielt interiør / Kontor</option>
-              <option value="kliniki">Klinikk / Medisinsk lokale</option>
-              <option value="stoczniowa">Maritim bransje</option>
-              <option value="inne">Annet skreddersydd oppdrag</option>
-            </select>
-          </div>
-
-          <div>
-            <label
-              class="block text-[11px] uppercase tracking-wider text-gray-300 mb-1"
-              >Melding / Prosjektbeskrivelse</label
-            >
-            <textarea
-              rows="3"
-              placeholder="Beskriv kort møblene, størrelsen på rommet eller eventuelle merknader ..."
-              class="w-full bg-brand-navy border border-white/20 px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors"
-            ></textarea>
-          </div>
-
-          <div
-            class="flex items-start space-x-2 text-[11px] text-gray-400 pt-1"
-          >
-            <input
-              type="checkbox"
-              id="rodo"
-              required
-              class="mt-0.5 accent-brand-gold"
-            />
-            <label for="rodo"
-              >Jeg samtykker til behandling av personopplysningene mine slik at dere kan kontakte meg om et tilbud.</label
-            >
-          </div>
-
-          <button
-            type="submit"
-            class="w-full py-3.5 bg-brand-gold text-brand-navy font-semibold text-xs uppercase tracking-[0.2em] hover:bg-brand-goldHover transition-colors mt-2"
-          >SEND MELDING →</button>
-        </form>
-
-        <!-- Success Confirmation State -->
-        <div
-          id="contact-form-success"
-          class="hidden text-center py-8 space-y-4"
-        >
-          <div
-            class="w-12 h-12 rounded-full border-2 border-brand-gold text-brand-gold flex items-center justify-center mx-auto text-xl"
-          >
-            ✓
-          </div>
-          <h4 class="font-serif text-2xl">Takk for at du tok kontakt!</h4>
-          <p class="text-xs text-gray-300 max-w-sm mx-auto">Meldingen er sendt. Teamet vårt tar kontakt så snart som mulig.</p>
-          <button
-            data-close-contact-modal
-            class="inline-block mt-4 px-6 py-2 border border-white/30 text-xs uppercase tracking-wider text-white hover:border-brand-gold hover:text-brand-gold"
-          >Lukk vinduet</button>
-        </div>
-      </div>
-    </dialog>
-
-    <!-- Scripts -->
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/cookie-consent.js"></script>
   </body>
