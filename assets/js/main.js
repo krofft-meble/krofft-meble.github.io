@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initScrollReveal(),
     initContactFormStatus(),
     initHeroSlider(),
+    initWorkshopGallery(),
     initNumberCounters(),
     initLanguageSelector());
 });
@@ -93,6 +94,66 @@ function initContactFormStatus() {
   if (new URLSearchParams(window.location.search).get("sent") === "1") {
     successMessage.classList.remove("hidden");
   }
+}
+function initWorkshopGallery() {
+  const gallery = document.getElementById("workshop-gallery");
+  if (!gallery) return;
+
+  const images = gallery.querySelectorAll(".workshop-gallery-item img");
+  const previous = document.getElementById("workshop-gallery-prev");
+  const next = document.getElementById("workshop-gallery-next");
+  const zoomDialog = document.getElementById("workshop-image-dialog");
+  const zoomClose = document.getElementById("workshop-image-close");
+  const zoomImage = document.getElementById("workshop-image-zoom");
+  const sources = [
+    "/assets/img/pracownia/1.webp",
+    "/assets/img/pracownia/2.webp",
+    "/assets/img/pracownia/3.webp",
+    "/assets/img/pracownia/4.webp",
+    "/assets/img/pracownia/5.webp",
+    "/assets/img/pracownia/6.webp",
+    "/assets/img/pracownia/7.webp",
+  ];
+  let offset = 0;
+
+  const render = () => {
+    images.forEach((image, index) => {
+      const sourceIndex = (offset + index) % sources.length;
+      image.style.opacity = "0";
+      image.src = sources[sourceIndex];
+      image.onload = () => {
+        image.style.opacity = "1";
+      };
+    });
+  };
+
+  previous &&
+    previous.addEventListener("click", () => {
+      offset = (offset - 1 + sources.length) % sources.length;
+      render();
+    });
+  next &&
+    next.addEventListener("click", () => {
+      offset = (offset + 1) % sources.length;
+      render();
+    });
+  images.forEach((image) => {
+    image.style.transition = "opacity 180ms ease";
+  });
+  gallery.querySelectorAll(".workshop-gallery-open").forEach((button) => {
+    button.addEventListener("click", () => {
+      if (!zoomDialog || !zoomImage) return;
+      const image = button.querySelector("img");
+      zoomImage.src = image?.src || "";
+      zoomImage.alt = image?.alt || "";
+      zoomDialog.showModal();
+    });
+  });
+  zoomClose?.addEventListener("click", () => zoomDialog?.close());
+  zoomDialog?.addEventListener("click", (event) => {
+    if (event.target === zoomDialog) zoomDialog.close();
+  });
+  render();
 }
 function initHeroSlider() {
   const e = document.getElementById("hero-slider");
