@@ -89,10 +89,65 @@ function initScrollReveal() {
 }
 function initContactFormStatus() {
   const successMessage = document.getElementById("contact-form-success");
-  if (!successMessage) return;
+  const form = document.getElementById("contact-page-form");
+  if (!successMessage || !form) return;
+
+  const submitButton = form.querySelector('button[type="submit"]');
+  if (!submitButton) return;
+
+  const defaultLabel = submitButton.textContent.trim();
+  const successLabel = successMessage.textContent.replace(/\s+/g, " ").trim();
+  const errorLabels = {
+    pl: "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+    en: "The message could not be sent. Please try again.",
+    de: "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+    nb: "Meldingen kunne ikke sendes. Prøv igjen.",
+  };
+  const errorLabel =
+    errorLabels[document.documentElement.lang] || errorLabels.en;
+
+  const restoreButton = () => {
+    submitButton.disabled = false;
+    submitButton.textContent = defaultLabel;
+  };
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    submitButton.disabled = true;
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+
+      let result = null;
+      try {
+        result = await response.json();
+      } catch {
+        result = null;
+      }
+
+      if (!response.ok || result?.success === false) {
+        throw new Error("Form submission failed");
+      }
+
+      submitButton.textContent = successLabel;
+      successMessage.classList.add("hidden");
+      form.reset();
+
+      window.setTimeout(restoreButton, 20_000);
+    } catch {
+      submitButton.textContent = errorLabel;
+      window.setTimeout(restoreButton, 5_000);
+    }
+  });
 
   if (new URLSearchParams(window.location.search).get("sent") === "1") {
-    successMessage.classList.remove("hidden");
+    submitButton.disabled = true;
+    submitButton.textContent = successLabel;
+    window.setTimeout(restoreButton, 20_000);
   }
 }
 function initWorkshopGallery() {
