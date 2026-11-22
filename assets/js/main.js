@@ -99,52 +99,111 @@ function initWorkshopGallery() {
   const gallery = document.getElementById("workshop-gallery");
   if (!gallery) return;
 
-  const images = gallery.querySelectorAll(".workshop-gallery-item img");
+  const viewport = gallery.querySelector(".workshop-gallery-viewport");
+  const track = gallery.querySelector(".workshop-gallery-track");
+  if (!viewport || !track) return;
+
+  const originalSlides = Array.from(track.children);
+  const slideCount = originalSlides.length;
+  if (!slideCount) return;
+
   const previous = document.getElementById("workshop-gallery-prev");
   const next = document.getElementById("workshop-gallery-next");
   const zoomDialog = document.getElementById("workshop-image-dialog");
   const zoomClose = document.getElementById("workshop-image-close");
   const zoomImage = document.getElementById("workshop-image-zoom");
-  const sources = [
-    "/assets/img/pracownia/1.webp",
-    "/assets/img/pracownia/2.webp",
-    "/assets/img/pracownia/3.webp",
-    "/assets/img/pracownia/4.webp",
-    "/assets/img/pracownia/5.webp",
-    "/assets/img/pracownia/6.webp",
-    "/assets/img/pracownia/7.webp",
-  ];
-  let offset = 0;
+  const createClone = (slide) => {
+    const clone = slide.cloneNode(true);
+    clone.setAttribute("aria-hidden", "true");
+    clone.querySelectorAll("button").forEach((button) => {
+      button.tabIndex = -1;
+    });
+    return clone;
+  };
+  track.prepend(...originalSlides.map(createClone));
+  track.append(...originalSlides.map(createClone));
 
-  const render = () => {
-    images.forEach((image, index) => {
-      const sourceIndex = (offset + index) % sources.length;
-      image.style.opacity = "0";
-      image.src = sources[sourceIndex];
-      image.onload = () => {
-        image.style.opacity = "1";
-      };
+  const slides = Array.from(track.children);
+  const reducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+  let activeIndex = slideCount;
+  let targetIndex = activeIndex;
+  let isScrolling = false;
+  let scrollEndTimer;
+  let resizeTimer;
+
+  const findNearestSlide = () => {
+    let nearestIndex = 0;
+    let nearestDistance = Infinity;
+
+    slides.forEach((slide, index) => {
+      const distance = Math.abs(slide.offsetLeft - viewport.scrollLeft);
+      if (distance < nearestDistance) {
+        nearestIndex = index;
+        nearestDistance = distance;
+      }
+    });
+
+    return nearestIndex;
+  };
+
+  const jumpToSlide = (index) => {
+    const scrollBehavior = viewport.style.scrollBehavior;
+    viewport.style.scrollBehavior = "auto";
+    viewport.scrollLeft = slides[index].offsetLeft;
+    viewport.style.scrollBehavior = scrollBehavior;
+  };
+
+  const scrollToSlide = (index) => {
+    targetIndex = Math.max(0, Math.min(slides.length - 1, index));
+    isScrolling = true;
+    viewport.scrollTo({
+      left: slides[targetIndex].offsetLeft,
+      behavior: reducedMotion ? "auto" : "smooth",
     });
   };
 
-  previous &&
-    previous.addEventListener("click", () => {
-      offset = (offset - 1 + sources.length) % sources.length;
-      render();
-    });
-  next &&
-    next.addEventListener("click", () => {
-      offset = (offset + 1) % sources.length;
-      render();
-    });
-  images.forEach((image) => {
-    image.style.transition = "opacity 180ms ease";
+  const scheduleLoopReset = () => {
+    window.clearTimeout(scrollEndTimer);
+    isScrolling = true;
+    scrollEndTimer = window.setTimeout(() => {
+      const index = findNearestSlide();
+      activeIndex = index;
+      if (index < slideCount) activeIndex += slideCount;
+      else if (index >= slideCount * 2) activeIndex -= slideCount;
+      targetIndex = activeIndex;
+      if (activeIndex !== index) jumpToSlide(activeIndex);
+      isScrolling = false;
+    }, 140);
+  };
+
+  jumpToSlide(activeIndex);
+  viewport.addEventListener("scroll", scheduleLoopReset, { passive: true });
+
+  previous?.addEventListener("click", () => {
+    scrollToSlide((isScrolling ? targetIndex : findNearestSlide()) - 1);
   });
+  next?.addEventListener("click", () => {
+    scrollToSlide((isScrolling ? targetIndex : findNearestSlide()) + 1);
+  });
+
+  window.addEventListener("resize", () => {
+    window.clearTimeout(resizeTimer);
+    resizeTimer = window.setTimeout(() => {
+      window.clearTimeout(scrollEndTimer);
+      activeIndex = slideCount + ((activeIndex - slideCount) % slideCount);
+      targetIndex = activeIndex;
+      isScrolling = false;
+      jumpToSlide(activeIndex);
+    }, 120);
+  });
+
   gallery.querySelectorAll(".workshop-gallery-open").forEach((button) => {
     button.addEventListener("click", () => {
       if (!zoomDialog || !zoomImage) return;
       const image = button.querySelector("img");
-      zoomImage.src = image?.src || "";
+      zoomImage.src = image?.currentSrc || image?.src || "";
       zoomImage.alt = image?.alt || "";
       zoomDialog.showModal();
     });
@@ -153,7 +212,6 @@ function initWorkshopGallery() {
   zoomDialog?.addEventListener("click", (event) => {
     if (event.target === zoomDialog) zoomDialog.close();
   });
-  render();
 }
 function initHeroSlider() {
   const e = document.getElementById("hero-slider");

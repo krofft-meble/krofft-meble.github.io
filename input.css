@@ -457,6 +457,27 @@ a:hover .arrow-nudge {
   transition-delay: 600ms;
 }
 
+@media (width >= 64rem) {
+  .lg\:reveal-delay-100 {
+    transition-delay: 100ms;
+  }
+  .lg\:reveal-delay-200 {
+    transition-delay: 200ms;
+  }
+  .lg\:reveal-delay-300 {
+    transition-delay: 300ms;
+  }
+  .lg\:reveal-delay-400 {
+    transition-delay: 400ms;
+  }
+  .lg\:reveal-delay-500 {
+    transition-delay: 500ms;
+  }
+  .lg\:reveal-delay-600 {
+    transition-delay: 600ms;
+  }
+}
+
 .materials-grid > .reveal-item:nth-child(1) {
   transition-delay: 100ms;
 }

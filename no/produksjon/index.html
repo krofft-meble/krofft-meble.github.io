@@ -36,6 +36,7 @@
       href="https://krofft.pl/en/production/"
     />
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/workshop-gallery.css" />
     <script>
       function loadFontsCSS(href) {
         const link = document.createElement("link");
@@ -439,7 +440,7 @@
               <figure class="reveal-item reveal-delay-100">
                 <div class="aspect-4/3 overflow-hidden">
                   <img
-                    src="/assets/img/pracownia/3.webp"
+                    src="/assets/img/robocze/14.webp"
                     alt="Detaljer i spesialtilpasset innredning"
                     class="w-full h-full object-cover"
                   />
@@ -505,11 +506,15 @@
             <div
               id="workshop-gallery"
               class="lg:col-span-9 relative reveal-item reveal-delay-100"
+              role="region"
               aria-label="Verkstedgalleri"
             >
-              <div class="grid grid-cols-2 md:grid-cols-6 gap-2 sm:gap-3">
+              <div
+                class="workshop-gallery-viewport workshop-gallery-track"
+                tabindex="0"
+              >
                 <figure
-                  class="workshop-gallery-item md:col-span-3 aspect-16/7 overflow-hidden bg-brand-creamSoft"
+                  class="workshop-gallery-item overflow-hidden bg-brand-creamSoft"
                 >
                   <button
                     type="button"
@@ -524,7 +529,7 @@
                   </button>
                 </figure>
                 <figure
-                  class="workshop-gallery-item md:col-span-3 aspect-16/7 overflow-hidden bg-brand-creamSoft"
+                  class="workshop-gallery-item overflow-hidden bg-brand-creamSoft"
                 >
                   <button
                     type="button"
@@ -539,7 +544,7 @@
                   </button>
                 </figure>
                 <figure
-                  class="workshop-gallery-item md:col-span-2 aspect-4/3 overflow-hidden bg-brand-creamSoft"
+                  class="workshop-gallery-item overflow-hidden bg-brand-creamSoft"
                 >
                   <button
                     type="button"
@@ -554,7 +559,7 @@
                   </button>
                 </figure>
                 <figure
-                  class="workshop-gallery-item md:col-span-2 aspect-4/3 overflow-hidden bg-brand-creamSoft"
+                  class="workshop-gallery-item overflow-hidden bg-brand-creamSoft"
                 >
                   <button
                     type="button"
@@ -569,7 +574,7 @@
                   </button>
                 </figure>
                 <figure
-                  class="workshop-gallery-item md:col-span-2 aspect-4/3 overflow-hidden bg-brand-creamSoft"
+                  class="workshop-gallery-item overflow-hidden bg-brand-creamSoft"
                 >
                   <button
                     type="button"
@@ -579,6 +584,36 @@
                     <img
                       src="/assets/img/pracownia/5.webp"
                       alt="Produksjonsstasjon"
+                      class="h-full w-full object-cover"
+                    />
+                  </button>
+                </figure>
+                <figure
+                  class="workshop-gallery-item overflow-hidden bg-brand-creamSoft"
+                >
+                  <button
+                    type="button"
+                    class="workshop-gallery-open h-full w-full cursor-zoom-in"
+                    aria-label="Forstørr verkstedbildet"
+                  >
+                    <img
+                      src="/assets/img/pracownia/6.webp"
+                      alt="Presse for møbelplater"
+                      class="h-full w-full object-cover"
+                    />
+                  </button>
+                </figure>
+                <figure
+                  class="workshop-gallery-item overflow-hidden bg-brand-creamSoft"
+                >
+                  <button
+                    type="button"
+                    class="workshop-gallery-open h-full w-full cursor-zoom-in"
+                    aria-label="Forstørr verkstedbildet"
+                  >
+                    <img
+                      src="/assets/img/pracownia/7.webp"
+                      alt="Trebearbeidingsmaskin med avsug"
                       class="h-full w-full object-cover"
                     />
                   </button>
@@ -674,8 +709,8 @@
             </div>
             <div class="aspect-4/3 overflow-hidden">
               <img
-                src="/assets/img/realizacje/kuchnia-gdansk-jasien/1.webp"
-                alt="Zabudowa kuchenna w zrealizowanym projekcie"
+                src="/assets/img/robocze/auta.webp"
+                alt="KROFFTs firmabiler klare for monteringsoppdrag"
                 class="w-full h-full object-cover"
               />
             </div>

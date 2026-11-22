@@ -36,6 +36,7 @@
       href="https://krofft.pl/en/production/"
     />
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/workshop-gallery.css" />
     <script>
       function loadFontsCSS(href) {
         const link = document.createElement("link");
@@ -438,7 +439,7 @@
               <figure class="reveal-item reveal-delay-100">
                 <div class="aspect-4/3 overflow-hidden">
                   <img
-                    src="/assets/img/pracownia/3.webp"
+                    src="/assets/img/robocze/14.webp"
                     alt="Made-to-measure joinery details"
                     class="w-full h-full object-cover"
                   />
@@ -504,11 +505,15 @@
             <div
               id="workshop-gallery"
               class="lg:col-span-9 relative reveal-item reveal-delay-100"
+              role="region"
               aria-label="Workshop gallery"
             >
-              <div class="grid grid-cols-2 md:grid-cols-6 gap-2 sm:gap-3">
+              <div
+                class="workshop-gallery-viewport workshop-gallery-track"
+                tabindex="0"
+              >
                 <figure
-                  class="workshop-gallery-item md:col-span-3 aspect-16/7 overflow-hidden bg-brand-creamSoft"
+                  class="workshop-gallery-item overflow-hidden bg-brand-creamSoft"
                 >
                   <button
                     type="button"
@@ -523,7 +528,7 @@
                   </button>
                 </figure>
                 <figure
-                  class="workshop-gallery-item md:col-span-3 aspect-16/7 overflow-hidden bg-brand-creamSoft"
+                  class="workshop-gallery-item overflow-hidden bg-brand-creamSoft"
                 >
                   <button
                     type="button"
@@ -538,7 +543,7 @@
                   </button>
                 </figure>
                 <figure
-                  class="workshop-gallery-item md:col-span-2 aspect-4/3 overflow-hidden bg-brand-creamSoft"
+                  class="workshop-gallery-item overflow-hidden bg-brand-creamSoft"
                 >
                   <button
                     type="button"
@@ -553,7 +558,7 @@
                   </button>
                 </figure>
                 <figure
-                  class="workshop-gallery-item md:col-span-2 aspect-4/3 overflow-hidden bg-brand-creamSoft"
+                  class="workshop-gallery-item overflow-hidden bg-brand-creamSoft"
                 >
                   <button
                     type="button"
@@ -568,7 +573,7 @@
                   </button>
                 </figure>
                 <figure
-                  class="workshop-gallery-item md:col-span-2 aspect-4/3 overflow-hidden bg-brand-creamSoft"
+                  class="workshop-gallery-item overflow-hidden bg-brand-creamSoft"
                 >
                   <button
                     type="button"
@@ -578,6 +583,36 @@
                     <img
                       src="/assets/img/pracownia/5.webp"
                       alt="Production workstation"
+                      class="h-full w-full object-cover"
+                    />
+                  </button>
+                </figure>
+                <figure
+                  class="workshop-gallery-item overflow-hidden bg-brand-creamSoft"
+                >
+                  <button
+                    type="button"
+                    class="workshop-gallery-open h-full w-full cursor-zoom-in"
+                    aria-label="Zoom in on workshop photo"
+                  >
+                    <img
+                      src="/assets/img/pracownia/6.webp"
+                      alt="Furniture panel press"
+                      class="h-full w-full object-cover"
+                    />
+                  </button>
+                </figure>
+                <figure
+                  class="workshop-gallery-item overflow-hidden bg-brand-creamSoft"
+                >
+                  <button
+                    type="button"
+                    class="workshop-gallery-open h-full w-full cursor-zoom-in"
+                    aria-label="Zoom in on workshop photo"
+                  >
+                    <img
+                      src="/assets/img/pracownia/7.webp"
+                      alt="Woodworking machine with dust extraction"
                       class="h-full w-full object-cover"
                     />
                   </button>
