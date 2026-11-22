@@ -8,7 +8,6 @@ const __dirname = path.dirname(__filename);
 const rootDir = __dirname;
 const baseUrl = "https://krofft.pl";
 
-// 🧠 Ustalanie priorytetu
 function getPriority(filePath) {
   const relPath = filePath.replace(rootDir, "").replace(/\\/g, "/");
 
@@ -16,14 +15,13 @@ function getPriority(filePath) {
   if (relPath.includes("/404")) return 0.3;
   if (relPath.endsWith(".pdf")) return 0.5;
 
-  // głębokość ścieżki
+  // Priority is based on URL depth.
   const depth = relPath.split("/").length - 2;
   if (depth === 1) return 0.8;
   if (depth === 2) return 0.6;
   return 0.5;
 }
 
-// 📂 Rekurencyjne wyszukiwanie plików HTML i PDF
 function getAllFiles(dir) {
   let results = [];
   const list = fs.readdirSync(dir);
@@ -42,7 +40,6 @@ function getAllFiles(dir) {
   return results;
 }
 
-// 🧩 Generowanie sitemap
 function generateSitemap() {
   console.log("🔍 Generowanie sitemap...");
   const files = getAllFiles(rootDir);
@@ -61,10 +58,8 @@ function generateSitemap() {
     return { loc, lastmod, priority };
   });
 
-  // 🔢 sortowanie po priorytecie malejąco
   urls.sort((a, b) => b.priority - a.priority);
 
-  // 🧱 składanie XML
   const xmlItems = urls
     .map(
       (u) => `
@@ -72,7 +67,7 @@ function generateSitemap() {
   <loc>${u.loc}</loc>
   <lastmod>${u.lastmod}</lastmod>
   <priority>${u.priority.toFixed(1)}</priority>
-</url>`
+</url>`,
     )
     .join("\n");
 
